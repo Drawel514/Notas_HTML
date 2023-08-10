@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotasHTML</title>
+</head>
+<body>
+  <h1>Principales Etiquetas de HTML</h1>
+
+  <!--<!DOCTYPE html>-->
+  <h2>Etiquetas Iniciales</h2>
+  <strong><code>&lt;!DOCTYPE html&gt;
+</code></strong>
+  <p>Esta es una declaración que indica al navegador web que el documento está escrito en HTML5, la última versión del lenguaje de marcado HTML. Es una declaración obligatoria y debe estar al comienzo del documento para asegurarse de que el navegador interprete el contenido de manera adecuada.</p>
+  <br>
+  <!--<html lang="es">-->
+  <strong><code>&lt;html lang="es"&gt;
+</code></strong>
+  <p>Esta etiqueta html es la envoltura principal de todo el documento HTML. El atributo lang especifica el idioma del contenido de la página, en este caso, se establece en español.</p>
+  <br>
+  <!--<head>-->
+  <strong><code>&lt;head&gt;</code></strong>
+  <p>El elemento head es donde se coloca la información sobre el documento que no se muestra directamente en la página, como metadatos, enlaces a hojas de estilo (CSS), enlaces a scripts, títulos de la página y más.</p>
+  <br>
+  <!--<meta charset="UTF-8">-->
+  <strong><code>&lt;meta charset="UTF-8"&gt;</code></strong>
+  <p>Esta etiqueta meta especifica la codificación de caracteres utilizada en el documento. En este caso, se establece en UTF-8, que es una codificación que admite una amplia gama de caracteres de diferentes idiomas.</p>
+  <br>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <strong><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></strong>
+  <p>Esta etiqueta meta establece las propiedades de visualización en dispositivos móviles. El atributo content especifica que el ancho debe adaptarse al ancho del dispositivo (width=device-width) y que la escala inicial debe ser 1.0 (initial-scale=1.0).</p>
+  <br>
+  <!--<title>-->
+  <strong><code>&lt;title&gt;NotasHTML&lt;/title&gt;</code></strong>
+  <p>Esta etiqueta title define el título de la página, que se mostrará en la pestaña del navegador y en los resultados de búsqueda. En este caso, el título se establece como "NotasHTML".</p>
+  <br>
+  <!--<body>-->
+  <strong><code>&lt;body&gt;</code></strong>
+  <p>El elemento body es donde se coloca el contenido visible de la página web. Aquí es donde se agregarían los encabezados, párrafos, imágenes, enlaces y otros elementos que los usuarios verán en el navegador.
+</p>
+<br>
+<!--Resumen-->
+<h3>Nota:</h3>
+<p>En resumen, estas etiquetas en conjunto conforman la estructura básica de un documento HTML. La declaración DOCTYPE asegura que se esté utilizando la versión correcta de HTML, el elemento html envuelve todo el contenido, el head contiene metadatos y enlaces a recursos, y el body contiene el contenido visible de la página.</p>
+<hr>
+<!--Meta Etiquetas-->
+<h2>Meta Etiquetas-SEO</h2>
+<p><strong>Las metaetiquetas son elementos HTML que proporcionan información sobre el documento HTML. Son parte del &lt;head&gt; de una página web y no tienen contenido visible en la página, sino que contienen metadatos que describen la página y cómo debe ser tratada por los navegadores y las redes sociales.</strong></p>
+<br>
+<!--<meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML con JonhMircha"> -->
+<strong><code>&lt; meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML con JonhMircha"&gt;</code></strong>
+<p>Esta metaetiqueta define la descripción del contenido de la página web. La descripción se utiliza en los resultados de búsqueda y en las vistas previas compartidas en redes sociales para brindar a los usuarios una breve idea de lo que pueden esperar encontrar en la página.</p>
+<br>
+<!--<link rel="canonical" href="http://tudominio.com/la-url-canonica">-->
+<strong><code>&lt;link rel="canonical" href="http://tudominio.com/la-url-canonica" &gt;</code></strong>
+<p> Esta etiqueta especifica la URL canónica de la página. La URL canónica es la versión preferida de una página en situaciones en las que múltiples URLs pueden acceder al mismo contenido. Ayuda a los motores de búsqueda a entender cuál es la URL principal de una página.</p>
+<br>
+<!--<link rel="icon" href="imagenes/FabiconHTML.png">-->
+<strong><code>&lt;link rel="icon" href="imagenes/FabiconHTML.png" &gt;</code></strong>
+<p>Esta etiqueta establece el ícono del sitio (favicon) que se muestra en la pestaña del navegador y en los marcadores. El atributo href especifica la ubicación del archivo de ícono.</p>
+<br>
+<!--<link rel="apple-touch-icon" href="imagenes/FabiconHTML.png">-->
+<strong><code>&lt;link rel="apple-touch-icon" href="imagenes/FabiconHTML.png" &gt;</code></strong>
+<p>Esta etiqueta define el ícono que se mostrará cuando los usuarios agreguen el sitio a la pantalla de inicio de su dispositivo movil, principalmente pensado para (iPhone o iPad).</p>
+<br>
+<!--<meta name="theme-color" content="#ff6600">-->
+<strong><code>&lt;meta name="theme-color" content="#ff6600" &gt;</code></strong>
+<p>Esta metaetiqueta define el color del tema de la barra de direcciones y otros elementos de interfaz del navegador cuando el sitio se guarda en la pantalla de inicio en dispositivos móviles.</p>
+<br>
+<!--<meta property="og:title" content="Aprendiendo Html">-->
+<strong><code>&lt;meta property="og:title" content="Aprendiendo Html" &gt;</code></strong>
+<p>Establece el título que se mostrará cuando el contenido se comparta en plataformas de redes sociales como Facebook. El prefijo "og" significa "Open Graph", un protocolo utilizado por Facebook para compartir enlaces enriquecidos.</p>
+<br>
+<!--<meta property="og:description" content=" En esta pagina estamos aprendiendo los fundamentos de HTML con JonhMircha">-->
+<strong><code>&lt;meta property="og:description" content=" En esta pagina estamos aprendiendo los fundamentos de HTML con JonhMircha" &gt;</code></strong>
+<p>: Define la descripción que se mostrará cuando se comparta el contenido en redes sociales.</p>
+<br>
+<!--<meta property="og:image" content="https://tudominio.com/imagenes/html5.jpg">-->
+<strong><code>&lt;meta property="og:image" content="https://tudominio.com/imagenes/html5.jpg" &gt;</code></strong>
+<p>Define la imagen que se mostrará cuando el contenido se comparta en redes sociales.</p>
+<br>
+<!--<meta property="og:url" content="https://tudominio.com/index.html">-->
+<strong><code>&lt;meta property="og:url" content="https://tudominio.com/index.html" &gt;</code></strong>
+<p>Especifica la URL que se compartirá en redes sociales.</p>
+<br>
+<!--<meta name="twitter:card" content="summary">-->
+<strong><code>&lt;meta name="twitter:card" content="summary" &gt;</code></strong>
+<p>Define el tipo de tarjeta de Twitter que se mostrará cuando el contenido se comparta en Twitter.</p>
+<br>
+<!--<meta name="twitter:site" content="@Nombre de la cuenta">-->
+<strong><code>&lt;meta name="twitter:site" content="@Nombre de la cuenta" &gt;</code></strong>
+<p> Define la cuenta de Twitter asociada al sitio web.</p>
+<hr>
+<h2>Comentarios</h2>
+<strong><code>&lt;!--"Comentario que deseamos agregar"-- &gt;</code></strong>
+<p>Los comentarios son secciones de texto que no se muestran en la página web cuando se carga en un navegador. En cambio, están destinados a proporcionar información adicional, explicaciones o notas para los desarrolladores o cualquier persona que revise el código.</p>
+<br>
+<hr>
+<!--Etiquetas de Encabezado-->
+<h2>Etiquetas de Encabezado</h2>
+<strong><code>&lt;h1&gt;Encabezado 1&lt;/h1&gt;</code></strong>
+<p>Las etiquetas de encabezado, desde &lt;h1&gt; hasta &lt;h6&gt;, se utilizan para definir los niveles de encabezados en una página web. &lt;h1&gt; es el nivel más alto y generalmente se usa para el título principal de la página. A medida que desciendes en los niveles (&lt; h2&gt;, &lt; h3&gt;, etc.), los encabezados se consideran subordinados a los niveles anteriores.Por lo general como normativa solo se utiliza un h1 por pagina web.</p>
+<br>
+<!--Etiqueta de parrafo-->
+<h2>Etiqueta de Parrafo</h2>
+<strong><code>&lt;p&gt;"texto del parrafo"&lt;/p&gt;</code></strong>
+<p>La etiqueta &lt;p&gt; se utiliza para crear párrafos de texto en una página web. Todo el contenido dentro de la etiqueta &lt;p&gt; se considerará como un párrafo separado. Los navegadores automáticamente agregan espacio antes y después del párrafo para separarlo visualmente del contenido circundante.</p>
+<br>
+<hr>
+<!--Etiquetas de Texto basicas-->
+<h2>Etiquetas de Texto basicas</h2>
+<!--<b>negrita</b>-->
+<h3>Letra en Negrita</h3>
+<strong><code>&lt;b&gt;negrita&lt;/b &gt;</code></strong>
+<p>se utiliza para aplicar formato de texto en negrita. Cualquier texto contenido dentro de estas etiquetas se mostrará con un estilo de fuente en negrita. Sin embargo, el uso de esta solo cambia la apariencia visual del texto y no tiene un significado semántico específico. Para aplicar formato y significado, es preferible usar la etiqueta <strong>&lt;strong &gt;</strong> en su lugar.</p>
+<br>
+<h3>Letra de tipo Italica</h3>
+<!--<i>italica</i>-->
+<strong><code>&lt;i&gt;italica&lt;/i &gt;</code></strong>
+<p>La etiqueta &lt;i&gt; se usa para aplicar formato de texto en cursiva o itálica. El texto contenido dentro de estas etiquetas se mostrará en una fuente cursiva. Similar a &lt;b&gt;, si deseas aplicar significado semántico además del formato, es mejor usar la etiqueta &lt;em&gt;.</p>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+&lt; &gt;
+<!---->
