@@ -110,21 +110,94 @@
 <hr>
 <!--Etiquetas de Texto basicas-->
 <h2>Etiquetas de Texto basicas</h2>
-<!--<b>negrita</b>-->
+<!--<b>"negrita"</b>-->
 <h3>Letra en Negrita</h3>
 <strong><code>&lt;b&gt;negrita&lt;/b &gt;</code></strong>
 <p>se utiliza para aplicar formato de texto en negrita. Cualquier texto contenido dentro de estas etiquetas se mostrará con un estilo de fuente en negrita. Sin embargo, el uso de esta solo cambia la apariencia visual del texto y no tiene un significado semántico específico. Para aplicar formato y significado, es preferible usar la etiqueta <strong>&lt;strong &gt;</strong> en su lugar.</p>
 <br>
 <h3>Letra de tipo Italica</h3>
-<!--<i>italica</i>-->
+<!--<i>"italica"</i>-->
 <strong><code>&lt;i&gt;italica&lt;/i &gt;</code></strong>
 <p>La etiqueta &lt;i&gt; se usa para aplicar formato de texto en cursiva o itálica. El texto contenido dentro de estas etiquetas se mostrará en una fuente cursiva. Similar a &lt;b&gt;, si deseas aplicar significado semántico además del formato, es mejor usar la etiqueta &lt;em&gt;.</p>
 <br>
-
-
-
-
-
+<h3>Letra subrayada</h3>
+<!--<u>"subrayado"</u>-->
+<strong><code>&lt;u&gt;"subrayado"&lt;/u &gt;</code></strong>
+<p>se utiliza para aplicar un formato de subrayado al texto, lo que significa que una línea horizontal se dibuja debajo del contenido del texto. Es comúnmente utilizada para resaltar o enfatizar ciertas palabras o frases.</p>
+<br>
+<h3>Etiquetas para dar elevacion a las letras</h3>
+<!--(e=mc <sub>2</sub>)o(H <sub>2</sub>O)-->
+<strong><code>&lt;sub&gt;"elevacion de letras"&lt;/sub&gt;</code></strong>
+<p> se usa para representar texto en formato de subíndice. En este ejemplo, se emplea para mostrar la famosa ecuación de la relatividad de Albert Einstein, donde el número "2" aparece ligeramente más abajo que el resto de los caracteres, indicando que es un exponente.Similar al ejemplo anterior, esta etiqueta HTML de subíndice se utiliza para mostrar la fórmula química del agua. El número "2" está desplazado hacia abajo para indicar que es un subíndice y se refiere a la cantidad de átomos de hidrógeno en la molécula.</p>
+<br>
+<h3>Letras Pequeñas</h3>
+<!--<small>Letras pequeñas</small>-->
+<strong><code>&lt;small&gt;"Letras en formato pequeño"&lt;/small&gt;</code></strong>
+<p>La etiqueta &lt;small&gt; se utiliza en HTML para reducir el tamaño del texto y presentar el contenido en una escala menor. Esto es útil cuando deseas mostrar información secundaria o menos relevante que no necesita ser resaltada en tamaño normal. En el ejemplo proporcionado, se usa para indicar que el texto "Letras pequeñas" debe ser mostrado en un tamaño de fuente más pequeño que el texto circundante.</p>
+<br>
+<hr>
+<h2>Etiquetas de Texto-Semanticas</h2>
+<h3>Texto Importante</h3>
+<!--<strong>Este texto es importante</strong>-->
+<strong><code>&lt;strong &gt;" Texto importante "&lt;/strong &gt;</code></strong>
+<p>La etiqueta &lt;strong &gt; se utiliza para resaltar texto y darle importancia semántica, generalmente aplicando un formato en negrita. No solo cambia el aspecto visual del texto, sino que también indica que el contenido es significativo o relevante en términos de estructura del documento.</p>
+<br>
+<h3>Texto de Enfasis</h3>
+<!--<em>Este texto hace enfasis</em>-->
+<strong><code>&lt;em&gt;"Este texto hace enfasis"&lt;/em&gt;</code></strong>
+<p>La etiqueta &lt;em&gt; se emplea para aplicar énfasis a un texto, generalmente mediante el uso de cursiva. Indica que el contenido es enfatizado, a menudo para transmitir un tono o significado especial.</p>
+<br>
+<h3>Bloque de Texto</h3>
+<!--<blockquote>Y o solo se, que nada se y me inclino ante aquel que lo sabe todo</blockquote>-->
+<strong><code>&lt;blockquote &gt;" "&lt;/ blockquote&gt;</code></strong>
+<p>La etiqueta &lt;blockquote &gt; se utiliza para formatear un bloque de texto que es una cita o una sección de texto que se toma de otra fuente. El contenido dentro de esta etiqueta se suele mostrar con un margen adicional en ambos lados. En tu ejemplo, se utiliza para representar una cita textual.</p>
+<br>
+<h3></h3>
+<!--<cite>Abuelo Daniel</cite>-->
+<strong><code>&lt;cite &gt;" Fuente citada "&lt;/cite &gt;</code></strong>
+<p>La etiqueta &lt;cite &gt; se utiliza para citar la fuente de una obra creativa, como un libro, una película, un poema, etc. Se usa generalmente en combinación con elementos que describen la obra citada. En tu caso, "Abuelo Daniel" es la fuente citada.</p>
+<br>
+<hr>
+<h2>Etiquetas de Saltos</h2>
+<h3>Salto de Linea</h3>
+<!--<br>-->
+<strong><code>&lt;br&gt;</code></strong>
+<p> La etiqueta &lt;br&gt; se utiliza para realizar un salto de línea dentro de un bloque de texto. No requiere una etiqueta de cierre porque es una etiqueta de autocierre. Es útil cuando deseas forzar un salto de línea en un lugar específico, como en una dirección o en un poema.</p>
+<br>
+<h3>Salto de Linea, Seccion</h3>
+<!--<hr>-->
+<strong><code>&lt;hr&gt;</code></strong>
+<p>La etiqueta &lt;hr&gt; se utiliza para insertar una línea horizontal en una página web. Crea una separación visual entre secciones de contenido. Al igual que la etiqueta &lt;br&gt;, es una etiqueta de autocierre y no necesita una etiqueta de cierre.</p>
+<br>
+<hr>
+<h2>Etiquetas de Formateo</h2>
+<h3>Texto preformateado en bloque</h3>
+<!--<pre>" Formato tipo "</pre>-->
+<strong><code>&lt;pre &gt;"Bloque de texto"&lt;/ pre&gt;</code></strong>
+<p>La etiqueta &lt;pre &gt; se utiliza para mostrar texto preformateado en un bloque. Esto significa que el texto se muestra tal como está en el código fuente, manteniendo los espacios en blanco y saltos de línea. Es especialmente útil para mostrar código o bloques de texto que requieren un formato específico.</p>
+<br>
+<h3>Texto tipo Codigo</h3>
+<!--<code>"Nada es verdad, todo esta permitido"</code>-->
+<strong><code>&lt;code &gt;"Letra tipo codigo "&lt;/code &gt;</code></strong>
+<p>La etiqueta <code> se utiliza para resaltar una porción de código o texto en la fuente monoespaciada (como la que se usa en el código) para indicar que es parte del código o la sintaxis.</p>
+<br>
+<hr>
+<h2>Etiquetas Semanticas Estructurales</h2>
+<h3>Etiqueta div</h3>
+<strong><code>&lt;div&gt;" Contenido "&lt;/div&gt;</code></strong>
+<p>La etiqueta &lt;div&gt; se utiliza como un contenedor genérico para agrupar y estructurar contenido en bloques. No tiene un propósito semántico específico, pero es ampliamente utilizada para aplicar estilos y dividir la página en secciones lógicas.</p>
+<!---->
+<br>
+<h3>Etiqueta de Encabezado</h3>
+<!--<header>Es la cabezera de un sitio o una seccion</header>-->
+<strong><code>&lt;header&gt;" Encabezado "&lt;/header&gt;</code></strong>
+<p>La etiqueta &lt;header&gt; se utiliza para representar la sección de encabezado de una página o sección. Por lo general, contiene elementos como el logotipo, el título de la página, enlaces de navegación principales u otros elementos que son parte esencial de la cabecera de la página.</p>
+<br>
+<h3>Contenido Principal</h3>
+<!--<main>Es quien defin la seccion principal del documento</main>-->
+<strong><code>&lt;main&gt;" contenido de principal de la pagina "&lt;/main&gt;</code></strong>
+<p>La etiqueta &lt;main&gt; se utiliza para encapsular el contenido principal del documento. En una página web, debe haber un solo elemento <main> que contenga el contenido principal que los usuarios están buscando, como artículos, secciones principales u otros elementos clave.</p>
+<br>
 
 
 
@@ -135,5 +208,5 @@
 
 </body>
 </html>
-&lt; &gt;
+&lt; &gt;" "&lt;/ &gt;
 <!---->
