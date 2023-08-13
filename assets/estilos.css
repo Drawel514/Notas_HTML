@@ -1,17 +1,26 @@
 html {
   scroll-behavior: smooth;
-}
-h1{
   font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+}
+
+h1,
+h3 {
   color: #da3a0a;
 }
 
 h2{
-  font-family: 'Courier New', monospace; 
   color: #0079e4 ;
 }
 
-h3{
-  font-family: 'Courier New', monospace; 
-  color: #da3a0a;
+body {
+  padding: 0 200px;
+}
+
+pre {
+  border: solid 1px;
+  display: block; /* Cambiamos a bloque para que ocupen toda la anchura disponible */
+  padding: 5px;
+  white-space: pre-wrap; /* Ajusta el texto manteniendo los espacios y saltos de línea */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho y alto */
 }
