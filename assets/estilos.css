@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+h1{
+  font-family: 'Courier New', monospace;
+  color: #da3a0a;
+}
+
+h2{
+  font-family: 'Courier New', monospace; 
+  color: #0079e4 ;
+}
+
+h3{
+  font-family: 'Courier New', monospace; 
+  color: #da3a0a;
+}

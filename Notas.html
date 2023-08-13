@@ -7,35 +7,70 @@
 </head>
 <body>
   <h1>Principales Etiquetas de HTML</h1>
-
+  <h2 id="inicio">Temario de Notas</h2>
+  <ul>
+    <li><a href="Notas.html#etiquetasIniciales">Etiquetas Iniciales del HTML</a></li>
+    <li><a href="Notas.html#metaetiquetasSEO">Meta-Etiquetas-SEO</a></li>
+    <li><a href="Notas.html#comentarios">Comentarios</a></li>
+    <li><a href="Notas.html#etiquetasEncabezado">Etiquetas de Encabezado</a></li>
+    <li><a href="Notas.html#etiquetasTextoBasicas">Etiquetas de Texto Basicas</a></li>
+    <li><a href="Notas.html#etiquetasTextoSemanticas">Etiquetas de Texto Semanticas</a></li>
+    <li><a href="Notas.html#etiquetasSaltos">Etiquetas de Saltos</a></li>
+    <li><a href="Notas.html#etiquetasFormateo">Etiquetas de Formateo</a></li>
+    <li><a href="Notas.html#etiquetasSemanticasEstructurales">Etiquetas Semanticas Estructurales</a></li>
+    <li><a href="Notas.html#etiquetasBloqueVSlinea">Etiquetas de Bloque VS Linea</a></li>
+    <li><a href="Notas.html#estilosCSS">Aplicando Estilos CSS en HTML</a></li>
+    <li><a href="Notas.html#etiquetasImagenes">Etiquetas de Imagenes</a></li>
+    <li><a href="Notas.html#etiquetasListasOrdenadas">Etiquetas de Listas Ordenadas</a></li>
+    <li><a href="Notas.html#etiquetasListasDesordenadas">Etiquetas de listas Desordenadas</a></li>
+    <li><a href="Notas.html#etiquetasListasDefinicion">Etiquetas de Listas de Definicion</a></li>
+    <li><a href="Notas.html#etiquetasTablas">Etiquetas de Tablas</a></li>
+    <li><a href="Notas.html#etiquetasEnlace">Etiquetas de Enlace</a></li>
+    <li><a href="Notas.html#etiquetasElementosInteractivos">Etiqueta de Elementos interactivos</a></li>
+    <li><a href="Notas.html#etiquetasAudioVideo">Etiquetas de Audio y Video</a></li>
+    <li><a href="Notas.html#etiquetaIframe">Etiqueta Iframe</a></li>
+    <li><a href="Notas.html#elementosFormularios">Elementos de Formulario</a></li>
+    <li><a href="Notas.html#otrosAtributosFormularios">Otros Elementos de Formulario</a></li>
+    <li><a href="Notas.html#formulariosSRC">Formularios con Selects, Radios y Checkbox</a></li>
+    <li><a href="Notas.html#formulariosContacto">Formularios de Contacto con Submit</a></li>
+    <li><a href="Notas.html#accesibilidadWeb">Accesibilidad Web</a></li>
+  </ul>
+  <!--Relacio con la hoja de estilos-->
+  <link rel="stylesheet" href="assets/estilos.css">
+  <br>
   <!--<!DOCTYPE html>-->
-  <h2>Etiquetas Iniciales</h2>
-  <strong><code>&lt;!DOCTYPE html&gt;
-</code></strong>
+  <h2 id="etiquetasIniciales">Etiquetas Iniciales</h2>
+  <h3>DOCTYPE declaration</h3>
+  <strong><code>&lt;!DOCTYPE html&gt;</code></strong>
   <p>Esta es una declaración que indica al navegador web que el documento está escrito en HTML5, la última versión del lenguaje de marcado HTML. Es una declaración obligatoria y debe estar al comienzo del documento para asegurarse de que el navegador interprete el contenido de manera adecuada.</p>
   <br>
   <!--<html lang="es">-->
-  <strong><code>&lt;html lang="es"&gt;
-</code></strong>
+  <h3>HTML root element</h3>
+  <strong><code>&lt;html lang="es"&gt;</code></strong>
   <p>Esta etiqueta html es la envoltura principal de todo el documento HTML. El atributo lang especifica el idioma del contenido de la página, en este caso, se establece en español.</p>
   <br>
   <!--<head>-->
+  <h3>Head element</h3>
   <strong><code>&lt;head&gt;</code></strong>
   <p>El elemento head es donde se coloca la información sobre el documento que no se muestra directamente en la página, como metadatos, enlaces a hojas de estilo (CSS), enlaces a scripts, títulos de la página y más.</p>
   <br>
   <!--<meta charset="UTF-8">-->
+  <h3>Meta Charset</h3>
   <strong><code>&lt;meta charset="UTF-8"&gt;</code></strong>
   <p>Esta etiqueta meta especifica la codificación de caracteres utilizada en el documento. En este caso, se establece en UTF-8, que es una codificación que admite una amplia gama de caracteres de diferentes idiomas.</p>
   <br>
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <h3>Viewport meta</h3>
   <strong><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></strong>
   <p>Esta etiqueta meta establece las propiedades de visualización en dispositivos móviles. El atributo content especifica que el ancho debe adaptarse al ancho del dispositivo (width=device-width) y que la escala inicial debe ser 1.0 (initial-scale=1.0).</p>
   <br>
   <!--<title>-->
+  <h3>Title element</h3>
   <strong><code>&lt;title&gt;NotasHTML&lt;/title&gt;</code></strong>
   <p>Esta etiqueta title define el título de la página, que se mostrará en la pestaña del navegador y en los resultados de búsqueda. En este caso, el título se establece como "NotasHTML".</p>
   <br>
   <!--<body>-->
+  <h3>Body element</h3>
   <strong><code>&lt;body&gt;</code></strong>
   <p>El elemento body es donde se coloca el contenido visible de la página web. Aquí es donde se agregarían los encabezados, párrafos, imágenes, enlaces y otros elementos que los usuarios verán en el navegador.
 </p>
@@ -43,62 +78,76 @@
 <!--Resumen-->
 <h3>Nota:</h3>
 <p>En resumen, estas etiquetas en conjunto conforman la estructura básica de un documento HTML. La declaración DOCTYPE asegura que se esté utilizando la versión correcta de HTML, el elemento html envuelve todo el contenido, el head contiene metadatos y enlaces a recursos, y el body contiene el contenido visible de la página.</p>
+<a href="Notas.html#inicio">🛦</a>
 <hr>
 <!--Meta Etiquetas-->
-<h2>Meta Etiquetas-SEO</h2>
+<h2 id="metaetiquetasSEO">Meta Etiquetas-SEO</h2>
 <p><strong>Las metaetiquetas son elementos HTML que proporcionan información sobre el documento HTML. Son parte del &lt;head&gt; de una página web y no tienen contenido visible en la página, sino que contienen metadatos que describen la página y cómo debe ser tratada por los navegadores y las redes sociales.</strong></p>
 <br>
 <!--<meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML con JonhMircha"> -->
+<h3>Meta Description</h3>
 <strong><code>&lt; meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML con JonhMircha"&gt;</code></strong>
 <p>Esta metaetiqueta define la descripción del contenido de la página web. La descripción se utiliza en los resultados de búsqueda y en las vistas previas compartidas en redes sociales para brindar a los usuarios una breve idea de lo que pueden esperar encontrar en la página.</p>
 <br>
 <!--<link rel="canonical" href="http://tudominio.com/la-url-canonica">-->
+<h3>Canonical Link</h3>
 <strong><code>&lt;link rel="canonical" href="http://tudominio.com/la-url-canonica" &gt;</code></strong>
 <p> Esta etiqueta especifica la URL canónica de la página. La URL canónica es la versión preferida de una página en situaciones en las que múltiples URLs pueden acceder al mismo contenido. Ayuda a los motores de búsqueda a entender cuál es la URL principal de una página.</p>
 <br>
 <!--<link rel="icon" href="imagenes/FabiconHTML.png">-->
+<h3>Favicon</h3>
 <strong><code>&lt;link rel="icon" href="imagenes/FabiconHTML.png" &gt;</code></strong>
 <p>Esta etiqueta establece el ícono del sitio (favicon) que se muestra en la pestaña del navegador y en los marcadores. El atributo href especifica la ubicación del archivo de ícono.</p>
 <br>
 <!--<link rel="apple-touch-icon" href="imagenes/FabiconHTML.png">-->
+<h3>Apple Touch Icon</h3>
 <strong><code>&lt;link rel="apple-touch-icon" href="imagenes/FabiconHTML.png" &gt;</code></strong>
 <p>Esta etiqueta define el ícono que se mostrará cuando los usuarios agreguen el sitio a la pantalla de inicio de su dispositivo movil, principalmente pensado para (iPhone o iPad).</p>
 <br>
 <!--<meta name="theme-color" content="#ff6600">-->
+<h3>Theme Color</h3>
 <strong><code>&lt;meta name="theme-color" content="#ff6600" &gt;</code></strong>
 <p>Esta metaetiqueta define el color del tema de la barra de direcciones y otros elementos de interfaz del navegador cuando el sitio se guarda en la pantalla de inicio en dispositivos móviles.</p>
 <br>
 <!--<meta property="og:title" content="Aprendiendo Html">-->
+<h3>Open Graph Title</h3>
 <strong><code>&lt;meta property="og:title" content="Aprendiendo Html" &gt;</code></strong>
 <p>Establece el título que se mostrará cuando el contenido se comparta en plataformas de redes sociales como Facebook. El prefijo "og" significa "Open Graph", un protocolo utilizado por Facebook para compartir enlaces enriquecidos.</p>
 <br>
 <!--<meta property="og:description" content=" En esta pagina estamos aprendiendo los fundamentos de HTML con JonhMircha">-->
+<h3>Open Graph Description</h3>
 <strong><code>&lt;meta property="og:description" content=" En esta pagina estamos aprendiendo los fundamentos de HTML con JonhMircha" &gt;</code></strong>
 <p>: Define la descripción que se mostrará cuando se comparta el contenido en redes sociales.</p>
 <br>
 <!--<meta property="og:image" content="https://tudominio.com/imagenes/html5.jpg">-->
+<h3>Open Graph Image</h3>
 <strong><code>&lt;meta property="og:image" content="https://tudominio.com/imagenes/html5.jpg" &gt;</code></strong>
 <p>Define la imagen que se mostrará cuando el contenido se comparta en redes sociales.</p>
 <br>
 <!--<meta property="og:url" content="https://tudominio.com/index.html">-->
+<h3>Open Graph URL</h3>
 <strong><code>&lt;meta property="og:url" content="https://tudominio.com/index.html" &gt;</code></strong>
 <p>Especifica la URL que se compartirá en redes sociales.</p>
 <br>
 <!--<meta name="twitter:card" content="summary">-->
+<h3>Twitter Card</h3>
 <strong><code>&lt;meta name="twitter:card" content="summary" &gt;</code></strong>
 <p>Define el tipo de tarjeta de Twitter que se mostrará cuando el contenido se comparta en Twitter.</p>
 <br>
 <!--<meta name="twitter:site" content="@Nombre de la cuenta">-->
+<h3>Twitter Site</h3>
 <strong><code>&lt;meta name="twitter:site" content="@Nombre de la cuenta" &gt;</code></strong>
 <p> Define la cuenta de Twitter asociada al sitio web.</p>
+<a href="Notas.html#inicio">🛦</a>
 <hr>
-<h2>Comentarios</h2>
+<h2 id="comentarios">Comentarios</h2>
 <strong><code>&lt;!--"Comentario que deseamos agregar"-- &gt;</code></strong>
 <p>Los comentarios son secciones de texto que no se muestran en la página web cuando se carga en un navegador. En cambio, están destinados a proporcionar información adicional, explicaciones o notas para los desarrolladores o cualquier persona que revise el código.</p>
 <br>
+<a href="Notas.html#inicio">🛦</a>
 <hr>
 <!--Etiquetas de Encabezado-->
-<h2>Etiquetas de Encabezado</h2>
+<h2 id ="etiquetasEncabezado">Etiquetas de Encabezado</h2>
 <strong><code>&lt;h1&gt;Encabezado 1&lt;/h1&gt;</code></strong>
 <p>Las etiquetas de encabezado, desde &lt;h1&gt; hasta &lt;h6&gt;, se utilizan para definir los niveles de encabezados en una página web. &lt;h1&gt; es el nivel más alto y generalmente se usa para el título principal de la página. A medida que desciendes en los niveles (&lt; h2&gt;, &lt; h3&gt;, etc.), los encabezados se consideran subordinados a los niveles anteriores.Por lo general como normativa solo se utiliza un h1 por pagina web.</p>
 <br>
@@ -107,9 +156,10 @@
 <strong><code>&lt;p&gt;"texto del parrafo"&lt;/p&gt;</code></strong>
 <p>La etiqueta &lt;p&gt; se utiliza para crear párrafos de texto en una página web. Todo el contenido dentro de la etiqueta &lt;p&gt; se considerará como un párrafo separado. Los navegadores automáticamente agregan espacio antes y después del párrafo para separarlo visualmente del contenido circundante.</p>
 <br>
+<a href="Notas.html#inicio">🛦</a>
 <hr>
 <!--Etiquetas de Texto basicas-->
-<h2>Etiquetas de Texto basicas</h2>
+<h2 id="etiquetasTextoBasicas">Etiquetas de Texto basicas</h2>
 <!--<b>"negrita"</b>-->
 <h3>Letra en Negrita</h3>
 <strong><code>&lt;b&gt;negrita&lt;/b &gt;</code></strong>
@@ -135,8 +185,9 @@
 <strong><code>&lt;small&gt;"Letras en formato pequeño"&lt;/small&gt;</code></strong>
 <p>La etiqueta &lt;small&gt; se utiliza en HTML para reducir el tamaño del texto y presentar el contenido en una escala menor. Esto es útil cuando deseas mostrar información secundaria o menos relevante que no necesita ser resaltada en tamaño normal. En el ejemplo proporcionado, se usa para indicar que el texto "Letras pequeñas" debe ser mostrado en un tamaño de fuente más pequeño que el texto circundante.</p>
 <br>
+<a href="Notas.html#inicio">🛦</a>
 <hr>
-<h2>Etiquetas de Texto-Semanticas</h2>
+<h2 ID="etiquetasTextoSemanticas">Etiquetas de Texto-Semanticas</h2>
 <h3>Texto Importante</h3>
 <!--<strong>Este texto es importante</strong>-->
 <strong><code>&lt;strong &gt;" Texto importante "&lt;/strong &gt;</code></strong>
@@ -157,8 +208,9 @@
 <strong><code>&lt;cite &gt;" Fuente citada "&lt;/cite &gt;</code></strong>
 <p>La etiqueta &lt;cite &gt; se utiliza para citar la fuente de una obra creativa, como un libro, una película, un poema, etc. Se usa generalmente en combinación con elementos que describen la obra citada. En tu caso, "Abuelo Daniel" es la fuente citada.</p>
 <br>
+<a href="Notas.html#inicio">🛦</a>
 <hr>
-<h2>Etiquetas de Saltos</h2>
+<h2 id="etiquetasSaltos">Etiquetas de Saltos</h2>
 <h3>Salto de Linea</h3>
 <!--<br>-->
 <strong><code>&lt;br&gt;</code></strong>
@@ -169,8 +221,9 @@
 <strong><code>&lt;hr&gt;</code></strong>
 <p>La etiqueta &lt;hr&gt; se utiliza para insertar una línea horizontal en una página web. Crea una separación visual entre secciones de contenido. Al igual que la etiqueta &lt;br&gt;, es una etiqueta de autocierre y no necesita una etiqueta de cierre.</p>
 <br>
+<a href="Notas.html#inicio">🛦</a>
 <hr>
-<h2>Etiquetas de Formateo</h2>
+<h2 id="etiquetasFormateo">Etiquetas de Formateo</h2>
 <h3>Texto preformateado en bloque</h3>
 <!--<pre>" Formato tipo "</pre>-->
 <strong><code>&lt;pre &gt;"Bloque de texto"&lt;/ pre&gt;</code></strong>
@@ -179,10 +232,11 @@
 <h3>Texto tipo Codigo</h3>
 <!--<code>"Nada es verdad, todo esta permitido"</code>-->
 <strong><code>&lt;code &gt;"Letra tipo codigo "&lt;/code &gt;</code></strong>
-<p>La etiqueta <code> se utiliza para resaltar una porción de código o texto en la fuente monoespaciada (como la que se usa en el código) para indicar que es parte del código o la sintaxis.</p>
+<p>La etiqueta &lt;code &gt; se utiliza para resaltar una porción de código o texto en la fuente monoespaciada (como la que se usa en el código) para indicar que es parte del código o la sintaxis.</p>
 <br>
+<a href="Notas.html#inicio">🛦</a>
 <hr>
-<h2>Etiquetas Semanticas Estructurales</h2>
+<h2 id="etiquetasSemanticasEstructurales">Etiquetas Semanticas Estructurales</h2>
 <h3>Etiqueta div</h3>
 <strong><code>&lt;div&gt;" Contenido "&lt;/div&gt;</code></strong>
 <p>La etiqueta &lt;div&gt; se utiliza como un contenedor genérico para agrupar y estructurar contenido en bloques. No tiene un propósito semántico específico, pero es ampliamente utilizada para aplicar estilos y dividir la página en secciones lógicas.</p>
@@ -198,6 +252,724 @@
 <strong><code>&lt;main&gt;" contenido de principal de la pagina "&lt;/main&gt;</code></strong>
 <p>La etiqueta &lt;main&gt; se utiliza para encapsular el contenido principal del documento. En una página web, debe haber un solo elemento <main> que contenga el contenido principal que los usuarios están buscando, como artículos, secciones principales u otros elementos clave.</p>
 <br>
+<h3>Pie de Pagina</h3>
+<!--<footer>Final del Texto</footer>-->
+<strong><code>&lt;footer &gt;"Final del Texto"&lt;/footer &gt;</code></strong>
+<p> La etiqueta &lt;footer &gt; se utiliza para representar la sección de pie de página de una página o sección. Por lo general, contiene información como derechos de autor, enlaces a páginas relacionadas, información de contacto o cualquier contenido que sea relevante para el pie de página.</p>
+<br>
+<h3>Navegacion</h3>
+<!--<nav>Representa una navegacion</nav>-->
+<strong><code>&lt;nav &gt;"Representa una navegacion "&lt;/nav &gt;</code></strong>
+<p>La etiqueta &lt;nav &gt; se utiliza para encapsular los enlaces de navegación, como menús o listas de enlaces que ayudan a los usuarios a moverse por el sitio web. Ayuda a identificar áreas de contenido que se consideran como elementos de navegación.</p>
+<br>
+<h3>Articulos</h3>
+<!--<article>Representa una seccion de autocontenido</article>-->
+<strong><code>&lt;article &gt;"Representa una seccion de autocontenido "&lt;/article &gt;</code></strong>
+<p>La etiqueta &lt;article &gt; se utiliza para representar un contenido independiente y autónomo en una página. Puede ser un artículo de noticias, una publicación de blog, una entrada de foro, etc. Debe tener sentido por sí mismo y ser capaz de distribuirse y reutilizarse independientemente del resto del contenido.</p>
+<br>
+<h3>Contenido Complementario o Secundario</h3>
+<!--<aside>Representa contenido complementario o secundario</aside>-->
+<strong><code>&lt;aside&gt;"Representa contenido complementario o secundario "&lt;/aside&gt;</code></strong>
+<p>La etiqueta &lt;aside&gt; se utiliza para encapsular contenido que es complementario o secundario al contenido principal de la página. Puede contener información relacionada, anuncios, widgets, enlaces relacionados o cualquier contenido no esencial para el flujo principal de la página.</p>
+<br>
+<h3>Secciones</h3>
+<!--<section>Representa una seccion de contenido generico</section>-->
+<strong><code>&lt;section &gt;"Representa una seccion de contenido generico "&lt;/section &gt;</code></strong>
+<p>La etiqueta &lt;section &gt; se utiliza para agrupar contenido relacionado en secciones temáticas. Ayuda a dividir y organizar el contenido de manera semántica, lo que facilita la comprensión y la estructura del documento.</p>
+<br>
+<h3>Direcciones</h3>
+<!--<address>Representa una direccion</address>-->
+<strong><code>&lt;address &gt;"Representa una direccion "&lt;/address &gt;</code></strong>
+<p>La etiqueta &lt;address &gt; se utiliza para encapsular información de contacto, como una dirección de correo electrónico, una dirección postal o información de contacto similar. Puede ser utilizado en el pie de página o dentro del contenido de un artículo o sección para indicar información de contacto relevante.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasBloqueVSlinea">Etiquetas de Bloque VS Etiquetas de linea</h2>
+<h3>&lt;div &gt; es la Etiqueta de Bloque por Excelencia</h3>
+<!--Una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas-->
+<strong><code>&lt;div &gt;"Etiqueta de Bloque "&lt;/div &gt;</code></strong>
+<p> La etiqueta &lt;div &gt; en HTML se utiliza como un contenedor genérico y versátil para agrupar y dividir el contenido en bloques o secciones. No tiene un propósito semántico en sí misma, pero se utiliza para aplicar estilos y estructurar la página web. Puedes aplicar estilos CSS, como márgenes, rellenos y bordes, a elementos &lt;div &gt; para crear diseños complejos y organizar el contenido. Es útil cuando deseas crear secciones o áreas específicas en tu página web y aplicar estilos o manipulaciones al contenido dentro de esas áreas.</p>
+<br>
+<h3>&lt;span &gt; es la Etiqueta de Linea por Excelencia</h3>
+<!--ESTA ETIQUETA SOLOOCUPA EL ESPACIO NECESARIO QUE TIENE SU CONTENIDO-->
+<strong><code>&lt;span &gt;"Etiqueta de Linea "&lt;/sapn&gt;</code></strong>
+<p>La etiqueta &lt;span &gt; se utiliza para aplicar estilo o marcar un fragmento específico de texto dentro de un elemento en línea, como un párrafo. A diferencia de &lt;div &gt;, que es un contenedor de bloque, &lt;span &gt; es un contenedor en línea. Esto significa que no cambia la estructura de línea y solo afecta al fragmento de texto contenido en su interior. Puedes aplicar estilos como colores de texto, resaltado o incluso clases CSS a elementos &lt;span &gt;. Es útil cuando deseas aplicar estilos o efectos a partes específicas de un texto en línea sin afectar a todo el párrafo.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="estilosCSS">Estilos CSS en HTML</h2>
+<h3>Aplicando Estilos con la Etiqueta div</h3>
+<!--Primer Forma de aplicar los estilos-->
+<strong><code>&lt;div style="background-color:green;color:aqua"&gt;"Esta es una de las formas para aplicar estilos "&lt;/div &gt;</code></strong>
+<p>En este ejemplo, estás aplicando estilos directamente en línea utilizando el atributo style en la etiqueta &lt;div &gt;. El atributo style te permite definir reglas de estilo en línea para un elemento HTML específico. En este caso, el fondo del &lt;div &gt; tendrá un color verde (background-color:green) y el texto dentro del &lt;div &gt; será de color aguamarina (color:aqua).</p>
+<br>
+<h3>Aplicando Estilos desde el encabezado</h3>
+<!--Segunda Forma de aplicar los estilos-->
+<strong><code>&lt;style &gt;"h2{color:brown;}"&lt;/style &gt;</code></strong>
+<p>De esta manera aplicamos los estilos desde el encabezado de nuestro documento HTML</p>
+<br>
+<h3>Aplicando Estilos con la Etiqueta span</h3>
+<!--De esta forma aplicamos estilos con la etiqueta span-->
+<strong><code>&lt;span style="background-color:cadetblue" &gt;"De esta forma aplicamos estilos n¿con la etiqueta span "&lt;/span &gt;</code></strong>
+<p>Aquí, también estás aplicando estilos en línea usando el atributo style, pero esta vez para la etiqueta &lt;span &gt;. El fondo del &lt;span &gt; será de color azul cadete (background-color:cadetblue).</p>
+<br>
+<h3>Aplicando los Estilos desde una hoja</h3>
+<!--Tercera Forma y la mas recomendada-->
+<strong><code>&lt;link rel="stylesheet" href="assets/estilos.css" &gt;</code></strong>
+<p>Esta es una forma diferente y más organizada de aplicar estilos a través de un archivo de hoja de estilos externo. Estás enlazando una hoja de estilos ubicada en el archivo "estilos.css" en la carpeta "assets". Esta hoja de estilos contiene reglas de estilo que afectarán a múltiples elementos en tus páginas web. Esta forma es preferible cuando deseas mantener tus estilos separados del contenido HTML, lo que facilita la gestión y el mantenimiento de los estilos en todo el sitio web.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasImagenes">Etiquetas de Imagenes</h2>
+<h3>Imagenes</h3>
+<!--Imagenes-->
+<strong><code>&lt;img src="imagenes/spiderman1.jpg" alt="Spiderman3" &gt;</code></strong>
+<p> La etiqueta &lt;img&gt; se utiliza para insertar imágenes en una página web. El atributo src especifica la fuente de la imagen, y el atributo alt proporciona un texto alternativo que se muestra si la imagen no puede cargarse o en caso de que sea leída por dispositivos de asistencia para accesibilidad. En este caso, la imagen "spiderman1.jpg" se mostrará y si no se carga, se mostrará el texto alternativo "Spiderman3".</p>
+<br>
+<h3>Imagenes SVG</h3>
+<!--Imagenes SVG-->
+<strong><code>&lt;img src="imagenes/hero-solid.svg" alt="imagen en formato SVG django" &gt;</code></strong>
+<p>imilar al ejemplo anterior, esta etiqueta &lt;img &gt; está insertando una imagen en formato SVG. Los archivos SVG son gráficos vectoriales escalables que se pueden mostrar a cualquier tamaño sin perder calidad. El atributo alt proporciona una descripción alternativa en caso de que la imagen no pueda cargarse.</p>
+<br>
+<h3>Figuras</h3>
+<!--Figuras-->
+<strong><code>&lt;figure &gt;<br>
+  &lt;img src="imagenes/halo.jpg" alt="Imagenes de Halo"&gt;<br>
+       &lt;figcaption &gt;"descripcion de nuestra imagen "&lt;/figcaption &gt;<br>
+       &lt;/figure &gt;</code></strong>
+<p>La etiqueta &lt;figure &gt; se utiliza para agrupar contenido multimedia, como imágenes, y proporcionar un contexto semántico para ese contenido. Dentro de &lt;figure &gt;, se coloca una &lt;img&gt; para mostrar la imagen y un &lt;figcaption &gt; para proporcionar una descripción o título para la imagen. Esto ayuda a relacionar el contenido visual con su contexto descriptivo.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasListasOrdenadas">Listas Ordenadas</h2>
+<h3>Listas de Orden normal</h3>
+<!--Lista de las Estaciones-->
+<strong><code>&lt;ol &gt;<br>
+  &lt;li &gt; Primavera &lt;/li &gt;<br>
+  &lt;li &gt; Verano &lt;/li &gt;<br>
+  &lt;li &gt; Otoño &lt;/li &gt;<br>
+  &lt;li &gt; Invierno &lt;/li &gt;<br>
+  &lt;/ol &gt;</code></strong>
+<p> La etiqueta &lt;ol &gt; se utiliza para crear una lista ordenada. Los elementos  &lt;li &gt; (elementos de lista) dentro de &lt;ol &gt; representan los elementos de la lista que estarán numerados automáticamente en orden. En este caso, se muestra una lista de las estaciones del año.</p>
+<br>
+<h3>Lista con el atributo start</h3>
+<!--Lista de medios de transporte-->
+<strong><code>&lt;ol start="3"&gt;<br>
+  &lt;li &gt; Motos &lt;/li &gt;<br>
+  &lt;li &gt; Autos &lt;/li &gt;<br>
+  &lt;li &gt; Aviones &lt;/li &gt;<br>
+  &lt;li &gt; Lanchas &lt;/li &gt;<br>
+  &lt;/ol &gt;</code></strong>
+<p>Aquí, el atributo start en la etiqueta &lt;ol &gt; se utiliza para establecer el número de inicio de la lista. En lugar de comenzar desde 1, la lista comenzará desde el número 3. Los elementos de la lista se numerarán en orden a partir de ese número.</p>
+<br>
+<h3>Listas con el atributo reversed</h3>
+<!--Lista de armas-->
+<strong><code>&lt;ol reserved&gt;<br>
+  &lt;li &gt; Espadas &lt;/li &gt;<br>
+  &lt;li &gt; Dagas &lt;/li &gt;<br>
+  &lt;li &gt; Hachas &lt;/li &gt;<br>
+  &lt;li &gt; Lanzas &lt;/li &gt;<br>
+  &lt;/ol &gt;</code></strong>
+<p>La utilización del atributo reversed en la etiqueta &lt;ol &gt; invierte el orden de numeración de la lista. Los elementos de la lista se numerarán en orden inverso, desde el último elemento al primero.</p>
+<br>
+<h3>Listas con otra enumeracion</h3>
+<!--Lista de piedras preciosas-->
+<strong><code>&lt;ol type="A"&gt;<br>
+  &lt;li &gt; Oro &lt;/li &gt;<br>
+  &lt;li &gt; Plata &lt;/li &gt;<br>
+  &lt;li &gt; Diamante &lt;/li &gt;<br>
+  &lt;li &gt; Perlas &lt;/li &gt;<br>
+  &lt;/ol &gt;</code></strong>
+<p>El atributo type en la etiqueta &lt;ol &gt; permite cambiar la forma en que se enumeran los elementos de la lista. En este caso, type="A" establece que los elementos de la lista se enumerarán utilizando letras mayúsculas (A, B, C, etc.).</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasListasDesordenadas">Listas Desordenadas</h2>
+<h3>Listas ul</h3>
+<!--Lista de Asesinos-->
+<strong><code>&lt;ul&gt;<br>
+  &lt;li &gt; Altair &lt;/li &gt;<br>
+  &lt;li &gt; Ezio Auditore &lt;/li &gt;<br>
+  &lt;li &gt; Connor Kenway &lt;/li &gt;<br>
+  &lt;li &gt; Eduard Kenwey &lt;/li &gt;<br>
+  &lt;/ul &gt;</code></strong>
+<p>La etiqueta &lt;ul &gt; se utiliza para crear una lista desordenada, donde los elementos de la lista se muestran con viñetas. Los elementos individuales se definen con la etiqueta &lt;li &gt; (elemento de lista). En este caso, se enumeran varios personajes de videojuegos.</p>
+<br>
+<h3>Listas con viñetas</h3>
+<!--Lista de los primeros Asesinos-->
+<strong><code>&lt;ul type="circle"&gt;<br>
+  &lt;li &gt; Bayeck &lt;/li &gt;<br>
+  &lt;li &gt; Aya &lt;/li &gt;<br>
+  &lt;li &gt; Kassandra &lt;/li &gt;<br>
+  &lt;li &gt; Eivor &lt;/li &gt;<br>
+  &lt;/ul &gt;</code></strong>
+<p>Aquí, el atributo type en la etiqueta &lt;ul &gt; cambia la apariencia de las viñetas a círculos.</p>
+<br>
+<h3>Lista con viñetas de cuadros</h3>
+<!--Lista de Felinos-->
+<strong><code>&lt;ul type="square"&gt;<br>
+  &lt;li &gt; Leon &lt;/li &gt;<br>
+  &lt;li &gt; Tigre &lt;/li &gt;<br>
+  &lt;li &gt; Leopardo &lt;/li &gt;<br>
+  &lt;li &gt; Puma &lt;/li &gt;<br>
+  &lt;/ul &gt;</code></strong>
+<p>En este caso, el atributo type cambia la apariencia de las viñetas a cuadrados.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasListasDefinicion">Listas de Definicion</h2>
+<!---->
+<strong><code>&lt;dl &gt;<br>
+  &lt;dt &gt; HTML &lt;/dt &gt;<br>
+  &lt;dd &gt; Es un lenguaje de marcado que define el contenido de la web &lt;/dd &gt;<br>
+  &lt;/dl &gt;</code></strong>
+<p>La etiqueta &lt;dl &gt; se utiliza para crear una lista de definición en HTML. En lugar de una lista tradicional de viñetas o números, una lista de definición se compone de términos (&lt;dt &gt;) y sus respectivas definiciones (&lt;dd &gt;).
+<br>
+La etiqueta &lt;dt &gt; se utiliza para definir un término en una lista de definición. En este caso, "html" se define como el término y la 
+etiqueta &lt;dd &gt; se utiliza para proporcionar la definición de un término en una lista de definición. Aquí, se proporciona la definición de "html".
+</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasTablas">Etiquetas de Tablas</h2>
+<h3>Tablas</h3>
+<!---->
+<strong><code>&lt;table &gt;
+  <br>
+  <!--Primer Filas-->
+  &lt;tr&gt;
+  <br>
+  &lt;td&gt;Nombre&lt;/td&gt;
+  &lt;td&gt;Constelacion&lt;/td&gt;
+  &lt;td&gt;Tipo&lt;/td&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  <!--Segunda Fila-->
+  &lt;tr&gt;
+  <br>
+  &lt;td&gt;Saga&lt;/td&gt;
+  &lt;td&gt;Geminis&lt;/td&gt;
+  &lt;td&gt;Oro&lt;/td&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  <!--tercer Fila-->
+  &lt;tr&gt;
+  <br>
+  &lt;td&gt;Ikki&lt;/td&gt;
+  &lt;td&gt;Fenix&lt;/td&gt;
+  &lt;td&gt;Bronce&lt;/td&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  <!--tercer Fila-->
+  &lt;tr&gt;
+  <br>
+  &lt;td&gt;Shina&lt;/td&gt;
+  &lt;td&gt;Ofiuco&lt;/td&gt;
+  &lt;td&gt;Plata&lt;/td&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  <!---->
+  &lt;/table &gt;</code></strong>
+<p>La etiqueta &lt;table&gt; se utiliza para crear una tabla en HTML. Dentro de ella, &lt;tr&gt; se utiliza para crear filas, y dentro de las filas, &lt;td&gt; se utiliza para crear celdas de datos. Esta estructura crea una tabla simple con tres columnas y múltiples filas.</p>
+<br>
+<h3>Tabla Estructurada</h3>
+<strong><code>&lt;table &gt;
+  <br>
+  <!--Encabezado-->
+  &lt;thead &gt;
+  <br>
+  &lt;tr&gt;<!--Titulo de la tabla-->
+  <br>
+  &lt;th colspan="3"&gt;ASSASSIN'S CREED LEGENDS&lt;/th&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  &lt;tr&gt;<!--Titulos de las columnas-->
+  <br>
+  &lt;th&gt;Nombre&lt;/th&gt;
+  &lt;th&gt;Rango&lt;/th&gt;
+  &lt;th&gt;Estado&lt;/th&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  &lt;/thead &gt;
+  <br>
+  &lt;tbody&gt;<!--Cuerpo de la tabla-->
+  <br>
+  &lt;tr&gt;<!--Datos de celdas-->
+  <br>
+  &lt;th&gt;Dario&lt;/th&gt;
+  &lt;th&gt;Maestro&lt;/th&gt;
+  &lt;th&gt;Muerto&lt;/th&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  &lt;tr&gt;<!--Datos de celdas-->
+  <br>
+  &lt;th&gt;Kassandra&lt;/th&gt;
+  &lt;th&gt;Asesina&lt;/th&gt;
+  &lt;th&gt;Muerta&lt;/th&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  &lt;tr&gt;<!--Datos de celdas-->
+  <br>
+  &lt;th&gt;Eivor &lt;/th&gt;
+  &lt;th&gt;Asesino&lt;/th&gt;
+  &lt;th&gt;Muerto&lt;/th&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  &lt;tr&gt;<!--Datos de celdas-->
+  <br>
+  &lt;th&gt;Bayeck&lt;/th&gt;
+  &lt;th&gt;Maestro&lt;/th&gt;
+  &lt;th&gt;Muerto&lt;/th&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  &lt;tr&gt;<!--Datos de celdas-->
+  <br>
+  &lt;th&gt;Aya&lt;/th&gt;
+  &lt;th&gt;Maestra&lt;/th&gt;
+  &lt;th&gt;Muerta&lt;/th&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  &lt;/tbody&gt;
+  <br>
+  &lt;tfoot&gt;
+  <br>
+  &lt;tr&gt;<!--Pie de la tabla-->
+  <br>
+  &lt;th colspan="3"&gt;
+  <br>
+  &lt;i&gt;
+  <br>
+  &lt;small&gt;Estas son las legendas que forjaron lo que hoy es la hermandad de los Assessinos&lt;/small&gt;
+  &lt;/i&gt;
+  &lt;/th&gt;
+  <br>
+  &lt;/tr&gt;
+  <br>
+  &lt;/tfoot&gt;
+  <br>
+  &lt;/table &gt;</code></strong>
+<p>Esta es una tabla más estructurada. Utiliza las etiquetas &lt;thead &gt;, &lt;tbody &gt;, y &lt;tfoot &gt; para separar el encabezado, el cuerpo y el pie de la tabla, respectivamente. También utiliza la etiqueta &lt;th&gt; para definir encabezados de columna en lugar de datos de celda. El atributo colspan se utiliza para controlar cuántas columnas ocupa una celda en una fila.
+<br>
+En resumen, las etiquetas &lt;table&gt;, &lt;tr &gt;, &lt;td &gt;, &lt;thead &gt;, &lt;tbody &gt;, &lt;tfoot &gt;, y &lt;th&gt; se utilizan para crear y estructurar tablas en HTML. Puedes utilizar estas etiquetas para presentar datos tabulares de manera organizada y fácil de leer en tu página web.
+</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasEnlace">Etiquetas de Enlace</h2>
+<h3>Enlaces</h3>
+<!--Envio hacia otra pagina-->
+<strong><code>&lt;a href="Assassins.html" target="_blank" rel="nofollow"&gt;Vamos hacia la pagina Assassins&lt;/ &gt;</code></strong>
+<p> La etiqueta &lt;a&gt; se utiliza para crear enlaces o hipervínculos en HTML. El atributo href especifica la dirección a la que debe dirigir el enlace. En este caso, el enlace apunta a "Assassins.html", lo que significa que al hacer clic en el enlace, el usuario será dirigido a esa página. El atributo target="_blank" se utiliza para abrir el enlace en una nueva ventana o pestaña del navegador. El atributo rel="nofollow" indica que los motores de búsqueda no deben seguir el enlace para indexar la página vinculada.</p>
+<br>
+<h3>Enlace Utilizando una imagen</h3>
+<!--Envio con una imagen-->
+<strong><code>&lt;a href="https://github.com/Drawel514" target="_blank" &gt; &lt;img src="imagenes/repositorio.jpg" width="40" height="40" alt="Ir al Repositoria"&gt;&lt;/a&gt;</code></strong>
+<p> En este caso, la etiqueta &lt;a&gt; también se utiliza para crear un enlace, pero esta vez contiene una imagen. El atributo href apunta a la URL "https://github.com/Drawel514". Al hacer clic en la imagen, el usuario será dirigido a esa dirección. El atributo target="_blank" nuevamente abre el enlace en una nueva ventana o pestaña. La etiqueta &lt;img&gt; dentro de la etiqueta &lt;a&gt; inserta una imagen en el enlace. Los atributos width y height controlan las dimensiones de la imagen. El atributo alt proporciona un texto alternativo que se muestra si la imagen no se carga y es útil para accesibilidad.</p>
+<br>
+<h3>Enlaces de Ancla</h3>
+<!--Anclas-->
+<strong><code>&lt;a href="index.html#inicio"&gt;&lt;b&gt;Regresar a Inicio&lt;/b&gt;&lt;/a&gt;</code></strong>
+<p>Esta etiqueta &lt;a&gt; crea un enlace hacia un elemento específico en otra página utilizando un anclaje o fragmento (#). El atributo href especifica el enlace hacia "index.html" y la parte #inicio indica que el enlace apunta a un elemento con el atributo id igual a "inicio". El texto entre las etiquetas &lt;b&gt; se muestra como un enlace resaltado. Al hacer clic en "Regresar a Inicio", el navegador se desplazará a la parte de "index.html" donde se encuentra el elemento con el atributo id igual a "inicio".</p>
+<br>
+<strong><code>&lt;h2 id="inicio"&gt;Aprendiendo HTML&lt;/h2&gt;</code></strong>
+<p> En esta parte del código, se utiliza la etiqueta &lt;h2&gt; para crear un encabezado de nivel 2. El atributo id se agrega para darle un identificador único a este encabezado, que en este caso es "inicio". Esto crea un anclaje o fragmento al que el enlace en el primer fragmento de código se puede dirigir. Cuando alguien hace clic en "Regresar a Inicio", el navegador se desplazará automáticamente a este encabezado.</p>
+<br>
+<strong>Nota</strong>
+<p>En resumen, estas dos etiquetas están relacionadas mediante el uso de un enlace (&lt;a&gt;) que apunta a un elemento con un atributo id específico (&lt;h2 id="inicio"&gt;). Al hacer clic en el enlace, el navegador se desplazará a la parte de la página donde se encuentra el elemento con el atributo id igual a "inicio", lo que crea una navegación fluida dentro de la misma página.</p>
+<br>
+<h3>Enlace hacia un correo electronico</h3>
+<!--correo-->
+<strong><code>&lt;a href="mailto:danielalexanderrojasquisacue2@gmail.com"&gt;Enlace a correo electronico&lt;/a&gt;</code></strong>
+<p> Esta etiqueta &lt;a&gt; crea un enlace que permite a los usuarios enviar un correo electrónico. El atributo href contiene la dirección de correo electrónico precedida por "mailto:". Al hacer clic en el enlace, se abrirá el cliente de correo electrónico predeterminado del usuario y se creará un nuevo mensaje dirigido a la dirección especificada.</p>
+<br>
+<h3>Enlace hacia whatsapp</h3>
+<!--whatsapp-->
+<strong><code>&lt;a href="https://api.whatsapp.com/send?phone=3182172205"&gt;Enlace hacia whatsapp&lt;/a&gt;</code></strong>
+<p>En este caso, la etiqueta &lt;a&gt; crea un enlace que dirige a los usuarios a una conversación de WhatsApp. El atributo href contiene la URL de la API de WhatsApp, con el parámetro phone que indica el número de teléfono al que se enviará el mensaje. Al hacer clic en el enlace, se abrirá la aplicación de WhatsApp o el navegador web con la conversación abierta hacia el número de teléfono especificado.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasElementosInteractivos">Elementos Interecativos</h2>
+<h3>Elemento Boton</h3>
+<!--<button onclick="alert('Hola has clickeado el boton')">Boton de Prueba</button>-->
+<strong><code>&lt;button onclick="alert('Hola has clickeado el boton')"&gt;Boton de Prueba&lt;/button&gt;</code></strong>
+<p>Esta etiqueta &lt;button&gt; crea un botón en HTML. El atributo onclick se utiliza para asociar una función de JavaScript que se ejecutará cuando se haga clic en el botón. En este caso, al hacer clic en el botón, se mostrará una alerta con el mensaje "Hola has clickeado el botón".</p>
+<br>
+<h3>Elemento Acordeon</h3>
+<!--Elementos de Acordeon-->
+<strong><code>&lt;details&gt;
+  <br>
+  &lt;summary&gt;Los Ocultos&lt;/summary&gt;
+  <br>
+  &lt;article&gt;
+  <br>
+  &lt;h2&gt;HASSASHI&lt;/h2&gt;
+  <br>
+  &lt;p&gt;Credo Religioso de tiempos Antiguos&lt;/p&gt;
+  <br>
+  &lt;/article&gt;
+  <br>
+  &lt;/details&gt;</code></strong>
+<p>La etiqueta &lt;details&gt; se utiliza para crear un elemento de acordeón, que muestra u oculta contenido cuando se hace clic en el título (&lt;summary&gt;). En este caso, se crea un acordeón llamado "VideoJuegos" que contiene dos juegos y sus imágenes.</p>
+<br>
+<h3>Elemento Acordeon-atributo Open</h3>
+<!--Elementos de Acordeon con atributo open-->
+<strong><code>&lt;details open&gt;
+  <br>
+  &lt;summary&gt;Evangelios&lt;/summary&gt;
+  <br>
+  &lt;article&gt;
+  <br>
+  &lt;h2&gt;San Mateo&lt;/h2&gt;
+  <br>
+  &lt;h2&gt;San Marcos&lt;/h2&gt;
+  <br>
+  &lt;h2&gt;San Lucas&lt;/h2&gt;
+  <br>
+  &lt;h2&gt;San Juan&lt;/h2&gt;
+  <br>
+  &lt;/article&gt;
+  <br>
+  &lt;/details&gt;</code></strong>
+<p>En este caso, se crea otro acordeón llamado "Evangelios" que se abre por defecto "open". El acordeón contiene una lista de nombres de los evangelios.</p>
+<br>
+<h3>Ventana Model</h3>
+<!--ESTO ES UNA VENTANA MODEL-->
+<strong><code>&lt;dialog open&gt;ESTO ES UNA VENTANA MODEL&lt;/dialog&gt;</code></strong>
+<p> La etiqueta &lt;dialog&gt; se utiliza para crear una ventana modal, que es un tipo de ventana emergente que se superpone al contenido principal de la página. El atributo open indica que la ventana modal se debe mostrar al cargar la página. En este caso, el contenido de la ventana modal es "Esta es una ventana modal".</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetasAudioVideo">Audio y Video</h2>
+<h3>Etiqueta de Audio</h3>
+<!--<audio src="media/RAPcristiano.mp3" controls preload></audio>-->
+<strong><code>&lt;audio src="media/Audio.mp3" controls preload&gt;" "&lt;/audio&gt;</code></strong>
+<p>Esta etiqueta &lt;audio&gt; se utiliza para insertar audio en una página web. El atributo src especifica la ubicación del archivo de audio. Los atributos controls permiten al usuario controlar la reproducción (pausa, reproducción, volumen, etc.). El atributo preload indica que el navegador debe cargar el audio en segundo plano.</p>
+<br>
+<h3>Etiqueta de Video</h3>
+<!--<video src="media/y2mate.com - EL SALTO DE FE Junto A La Giralda_360p.mp4" controls preload poster="imagenes/1624051412331.jpg"></video>-->
+<strong><code>&lt;video src="media/y2mate.com - EL SALTO DE FE Junto A La Giralda_360p.mp4" controls preload poster="imagenes/1624051412331.jpg"&gt;&lt;/video&gt;</code></strong>
+<p>a etiqueta &lt;video&gt; se utiliza para insertar videos en una página web. El atributo src especifica la ubicación del archivo de video. Los atributos controls permiten al usuario controlar la reproducción del video. El atributo preload indica que el navegador debe cargar el video en segundo plano. El atributo poster establece una imagen de vista previa para el video antes de que se reproduzca.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="etiquetaIframe">Etiqueta Iframe</Iframe></h2>
+<h3>Iframe 1</h3>
+<!--<iframe src="Assassins.html" frameborder="1"></iframe>-->
+<strong><code>&lt;iframe src="Assassins.html" frameborder="1"&gt;&lt;/iframe&gt;</code></strong>
+<p>La etiqueta &lt;iframe&gt; se utiliza para incrustar contenido de otras páginas web en una página. El atributo src especifica la URL del contenido que se va a incrustar. El atributo frameborder define el ancho del borde del iframe.</p>
+<br>
+<h3>Iframe 2</h3>
+<!--<iframe src="media/keyboard-shortcuts-windows.pdf" frameborder="2"></iframe>-->
+<strong><code>&lt;iframe src="media/keyboard-shortcuts-windows.pdf" frameborder="2"&gt;&lt;/iframe&gt;</code></strong>
+<p>En este caso, otra etiqueta &lt;iframe&gt; se utiliza para incrustar un archivo PDF en la página. El atributo src especifica la ubicación del archivo PDF. El atributo frameborder establece el ancho del borde del iframe.</p>
+<br>
+<h3>Iframe 3</h3>
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/PnFAOvhpILU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<strong><code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/PnFAOvhpILU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;</code></strong>
+<p>Aquí, se utiliza otra etiqueta &lt;iframe&gt; para incrustar un video de YouTube en la página. Los atributos width y height definen las dimensiones del iframe. El atributo src especifica la URL del video de YouTube. Otros atributos como frameborder, allow, y allowfullscreen controlan el comportamiento y la interacción con el video incrustado.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="elementosFormularios">Elementos de Formulario</h2>
+<h3>Input tipo Texto</h3>
+<!--<input type="text">-->
+<strong><code>&lt;input type="text"&gt;</code></strong>
+<p>ste tipo de &lt;input&gt; crea un campo de texto de una línea, donde los usuarios pueden ingresar texto. Es comúnmente utilizado para formularios donde se solicita información de una sola línea, como nombres, apellidos o direcciones.</p>
+<br>
+<h3>Input tipo Checkeo</h3>
+<!--<input type="checkbox">-->
+<strong><code>&lt;input type="checkbox"&gt;</code></strong>
+<p>Este tipo de &lt;input&gt; crea una casilla de verificación. Los usuarios pueden marcar o desmarcar la casilla. Es útil para opciones binarias, como confirmaciones o selecciones múltiples.</p>
+<br>
+<h3>Input tipo Radio</h3>
+<!--<input type="radio">-->
+<strong><code>&lt;input type="radio"&gt;</code></strong>
+<p>Este tipo de &lt;input&gt; crea un botón de opción. Los usuarios pueden seleccionar una opción de varias disponibles. Se utilizan en grupos para que solo una opción pueda ser seleccionada a la vez.</p>
+<br>
+<h3>Input tipo Fecha</h3>
+<!--<input type="date">-->
+<strong><code>&lt;input type="date"&gt;</code></strong>
+<p>Crea un campo de entrada de fecha, donde los usuarios pueden seleccionar una fecha de un calendario desplegable.</p>
+<br>
+<h3>Input tipo Color</h3>
+<!--<input type="color">-->
+<strong><code>&lt;input type="color"&gt;</code></strong>
+<p>Genera un selector de color que permite a los usuarios elegir un color a través de una interfaz de selección de color.</p>
+<br>
+<h3>Input tipo Boton</h3>
+<!--<input type="button" value = "Boton">-->
+<strong><code>&lt;input type="button" value = "Boton"&gt;</code></strong>
+<p>Crea un botón que puede tener un valor de etiqueta personalizado y se puede usar para activar eventos de JavaScript.</p>
+<br>
+<h3>Input tipo Envio</h3>
+<!--<input type="submit">-->
+<strong><code>&lt;input type="submit"&gt;</code></strong>
+<p>Crea un botón de envío que se utiliza dentro de formularios para enviar los datos ingresados a un servidor.</p>
+<br>
+<h3>Input tipo Archivo</h3>
+<!--<input type="file">-->
+<strong><code>&lt;input type="file"&gt;</code></strong>
+<p>Genera un campo de carga de archivos que permite a los usuarios seleccionar y cargar archivos desde su dispositivo.</p>
+<br>
+<h3>Input de Archivos Multiples</h3>
+<!--<input type="file" multiple>-->
+<strong><code>&lt;input type="file" multiple&gt;</code></strong>
+<p>Similar al anterior, pero permite a los usuarios seleccionar y cargar múltiples archivos.</p>
+<br>
+<h3>Inputs Ocultos</h3>
+<!--<input type="hidden" name="idioma" values="español">-->
+<strong><code>&lt;input type="hidden" name="idioma" values="español"&gt;</code></strong>
+<p>Este tipo de &lt;input&gt; crea un campo oculto que no es visible para los usuarios. Se utiliza para enviar información adicional al servidor junto con un formulario sin que los usuarios lo vean.</p>
+<br>
+<h3>Inputs para datos espesificos</h3>
+<!--<input type="email">, <input type="number">, <input type="tel">, <input type="password">, <input type="search">-->
+<strong><code>
+  <h4>Input Correo</h4>
+  &lt;input type="email"&gt;
+  <br>
+  <h4>Input Numero</h4>
+  &lt;input type="number"&gt;
+  <br>
+  <h4>Input Telefono</h4>
+  &lt;input type="tel"&gt;
+  <br>
+  <h4>Input Contraseña</h4>
+  &lt;input type="password"&gt;
+  <br>
+  <h4>Input para Terminos de Busqueda</h4>
+  &lt;input type="search"&gt;
+  </code></strong>
+<p>Estos tipos de &lt;input&gt; son específicos para recolectar información como correo electrónico, números, números de teléfono, contraseñas y términos de búsqueda, respectivamente.</p>
+<br>
+<h3>Etiqueta textarea</h3>
+<!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
+<strong><code>&lt;textarea name="" id="" cols="30" rows="10"&gt;&lt;/textarea&gt;</code></strong>
+<p>La etiqueta &lt;textarea&gt; se utiliza para crear un campo de texto de múltiples líneas donde los usuarios pueden ingresar texto más largo, como comentarios o descripciones. Los atributos name y id permiten asignar un nombre e identificador al campo. Los atributos cols y rows controlan el número de columnas y filas visibles en el área de texto.</p>
+<br>
+<h3>Menu Desplegable de Opciones</h3>
+<strong><code>&lt;select&gt;
+  <br>
+  &lt;option value=""&gt;3 Cielo&lt;/option&gt;<br>
+  &lt;option value=""&gt;2 Cielo&lt;/option&gt;<br>
+  &lt;option value=""&gt;1 Cielo&lt;/option&gt;<br>
+  &lt;option value=""&gt;Tierra&lt;/option&gt;<br>
+  &lt;option value=""&gt;Infierno&lt;/option&gt;
+  <br>
+  &lt;/select&gt;</code></strong>
+<p>La etiqueta &lt;select&gt;se utiliza para crear un menú desplegable de opciones. Las etiquetas&lt;option&gt;dentro del&lt;select&gt;representan las opciones que los usuarios pueden elegir. El atributonameyidse pueden utilizar para asignar un nombre e identificador al menú desplegable. El atributovaluedentro de cada&lt;option&gt; define el valor que se enviará al servidor cuando se selecciona una opción.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="otrosAtributosFormularios">Otros atributos de Formularios</h2>
+<!--<input type="text" value = "DanielRojas" readonly disabled>-->
+<strong><code>&lt;input type="text" value = "DanielRojas" readonly disabled&gt;</code></strong>
+<p>En esta etiqueta input se emplearon los sigguientes atributos. <br>
+Tipo: text (campo de entrada de texto). <br>
+Atributo value: Establece el valor predeterminado del campo de texto como "DanielRojas". <br>
+Atributo readonly: Hace que el campo de texto sea de solo lectura, lo que significa que los usuarios no pueden editar el contenido directamente, pero pueden verlo. <br>
+Atributo disabled: Deshabilita el campo de texto, lo que impide que los usuarios interactúen con él y cambien su contenido.</p>
+<br>
+
+<!--<input type="text" placeholder ="Escribe tu Nombre">-->
+<strong><code>&lt;input type="text" placeholder ="Escribe tu Nombre" &gt;</code></strong>
+<p>Aqui implementamos el atributo placeholder.
+<br>
+Tipo: text (campo de entrada de texto). <br>
+Atributo placeholder: Muestra un texto de ejemplo dentro del campo de texto antes de que los usuarios ingresen algo. En este caso, muestra "Escribe tu Nombre" como una guía para los usuarios.</p>
+<br>
+<h3>Ejemplo de Formulario </h3>
+<!--<form action="https://github.com/Drawel514" method="POST" autocomplete="OF">-->
+<strong><code>
+<h4>Etiqueta &lt;form&gt;</h4>
+&lt;form action="https://github.com/Drawel514" method="POST" autocomplete="OF"&gt;
+<p>La etiqueta &lt;form&gt; se utiliza para definir un formulario. El atributo action especifica la URL a la que se enviarán los datos del formulario cuando se envíe. El atributo method establece el método HTTP que se utilizará para enviar los datos (en este caso, POST). El atributo autocomplete se utiliza para habilitar el autocompletado de campos en el formulario.</p>
+<!---->
+<h4>Campo Usuario</h4>
+&lt;label for="usuario"&gt;Usuario:&lt;/label&gt;
+<p>La etiqueta  &lt;label&gt; se utiliza para crear una etiqueta de texto descriptiva para un campo de entrada. El atributo for se usa para asociar la etiqueta con el campo de entrada correspondiente mediante el valor del atributo id.</p>
+<!---->
+&lt;input type="text" name ="usuario" id="usuario" placeholder="USER"&gt;
+<p>El primer campo de entrada &lt;input&gt; es de tipo text y tiene el nombre "usuario" y el identificador "usuario". El atributo name define el nombre que se utilizará para enviar el valor ingresado. El atributo placeholder proporciona una guía para los usuarios sobre qué tipo de información se espera.</p>
+<!---->
+<h4>Campo Contraseña</h4>
+&lt;label for=""&gt;Contraseña:&lt;/label&gt;
+<p>Otro &lt;label&gt; para el campo de contraseña.</p>
+<!---->
+&lt;input type="password" name ="password" placeholder="Password" required=""&gt;
+<p> El segundo campo de entrada &lt;input&gt; es de tipo password, lo que oculta los caracteres de la contraseña. Tiene el nombre "password". El atributo required indica que este campo debe completarse antes de enviar el formulario.</p>
+<!---->
+<h4>Boton de envio</h4>
+&lt;input type="submit"&gt;
+<p>Un botón de envío que permite a los usuarios enviar los datos ingresados en el formulario.</p>
+<!---->
+<h4>Boton de reseteo de datos</h4>
+&lt;input type="reset"&gt;
+<p>Un botón de restablecimiento que permite a los usuarios borrar o restablecer los valores en el formulario a los valores predeterminados.</p>
+&lt;/form&gt;</code></strong>
+<p></p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="formulariosSRC">Formularios selects, radios y checkbox</h2>
+<h3>Formulario 2</h3>
+<!--Formulario Select-->
+<strong><code>&lt;form action=""&gt;
+<h4>Elige tu Idioma con (SELECTS)</h4>
+<p>Crea un menú desplegable con opciones para seleccionar el idioma preferido. El atributo name define el nombre que se utilizará para enviar la selección y el atributo required indica que se debe seleccionar una opción antes de enviar el formulario.</p>
+  &lt;select name="idioma" required &gt;
+    &lt;option value=""&gt;Elige una opción&lt;/option&gt;
+    <br>
+    &lt;option value="es" selected&gt;Español&lt;/option&gt;
+    <br>
+    &lt;option value="en"&gt;Inglés&lt;/option&gt;
+    <br>
+    &lt;option value="fr"&gt;Francés&lt;/option&gt;
+    <br>
+    &lt;option value="it"&gt;Italiano&lt;/option&gt;
+  &lt;/select&gt;
+<h4>Elige tu Juego Favorito con (RADIOS)</h4>
+<p>Crea botones de opción (radios) para seleccionar el juego favorito. El atributo name agrupa los botones, el atributo id se utiliza para asociar etiquetas, el atributo value define el valor a enviar y checked marca el botón por defecto.</p>
+  <strong>opcion 1</strong><br>
+  &lt;input type="radio" name="Game" id="radio-Assassins" value="AS" checked&gt;<br>
+  &lt;label for="radio-Assassins"&gt;Assassins Creed&lt;/label&gt;
+  <br>
+  <strong>opcion 2</strong><br>
+  &lt;input type="radio" name="Game" id="radio-Halo" value="HALO"&gt;<br>
+  &lt;label for="radio-Halo"&gt;HALO&lt;/label&gt;
+  <br>
+  <strong>opcion 3</strong><br>
+  &lt;input type="radio" name="Game" id="radio-RDR" value="RDRII"&gt;<br>
+  &lt;label for="radio-RDR"&gt;Red Dead Redemption II&lt;/label&gt;
+<!---->
+<h4>Elije tus intereses (CHECKBOX)</h4>
+<p> Crea casillas de verificación para elegir intereses. El atributo name agrupa las casillas, el atributo value define el valor a enviar.</p>
+  &lt;label&gt;
+    &lt;input type="checkbox" name="intereses" value="deportes"&gt;
+    Deportes
+  &lt;/label&gt;
+  <br>
+  &lt;label&gt;
+    &lt;input type="checkbox" name="intereses" value="Tecnologia"&gt;
+    Tecnología
+  &lt;/label&gt;
+  <br>
+  &lt;label&gt;
+    &lt;input type="checkbox" name="intereses" value="Entretenimiento"&gt;
+    Cine
+  &lt;/label&gt;
+<!---->
+  <h4>Terminos y Condiciones</h4>
+  <p>Casilla de verificación para aceptar términos y condiciones. El atributo required indica que esta casilla debe ser marcada antes de enviar el formulario.</p>
+  &lt;label&gt;
+    &lt;input type="checkbox" name="terminos" value="Condiciones" required&gt;
+    ¿Acepta términos y condiciones?
+  &lt;/label&gt;
+  <br>
+  &lt;input type="submit"&gt;
+  <br>
+  &lt;input type="reset"&gt;
+  <br>
+&lt;/form&gt;</code></strong>
+<p></p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="formulariosContacto">Formularios de Contacto</h2>
+<p>Un formulario de contacto en HTML es una estructura que permite a los usuarios de un sitio web enviar información o mensajes al propietario del sitio a través de un formulario en línea. Estos formularios son una manera conveniente para que los visitantes se comuniquen directamente con el dueño del sitio web sin tener que abrir su cliente de correo electrónico.
+<br>
+Un formulario de contacto típico suele incluir campos donde los usuarios pueden ingresar su nombre, dirección de correo electrónico, asunto y mensaje. Una vez que los usuarios llenan estos campos y envían el formulario, la información se envía a una dirección de correo electrónico designada o a una base de datos para su posterior procesamiento.</p>
+<!---->
+<strong><code>&lt; &lt;form action="https://formsubmit.co/danielalexanderrojasquisacue2@gmail.com" method="POST"&gt;
+<p>La etiqueta <form> se utiliza para definir un formulario. El atributo action especifica la URL a la que se enviarán los datos del formulario cuando se envíe. En este caso, se enviarán a la dirección de correo electrónico proporcionada a través del servicio FormSubmit. El atributo method se establece en POST para enviar los datos.</p>
+<br>
+  <h4>Nombre</h4>
+  &lt;input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre solo acepta letras y espacios en blanco" required&gt;
+  <p>Campo de entrada de texto para que los usuarios ingresen su nombre. El atributo name define el nombre que se utilizará para enviar los datos. El atributo placeholder proporciona una guía para los usuarios. El atributo pattern especifica una expresión regular que valida que solo se ingresen letras y espacios en blanco. El atributo title muestra un mensaje de validación personalizado. El atributo required indica que este campo debe completarse antes de enviar el formulario.</p>
+  <br>
+  <h4>Correo</h4>
+  &lt;input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo inválido" required&gt;
+  <p>Campo de entrada de texto para que los usuarios ingresen su dirección de correo electrónico. El atributo type se establece en email para que el navegador realice validación de formato de correo. El atributo name define el nombre que se utilizará para enviar los datos. El atributo placeholder proporciona una guía para los usuarios. El atributo pattern especifica una expresión regular que valida el formato de correo electrónico. El atributo title muestra un mensaje de validación personalizado. El atributo required indica que este campo debe completarse antes de enviar el formulario.</p>
+  <br>
+  <h4>Comentarios</h4>
+  &lt;textarea name="Comentarios" cols="30" rows="10" required&gt;&lt;/textarea&gt;
+  <p>Campo de texto de múltiples líneas para que los usuarios ingresen sus comentarios. El atributo name define el nombre que se utilizará para enviar los datos. Los atributos cols y rows controlan el tamaño visible del área de texto. El atributo required indica que este campo debe completarse antes de enviar el formulario.</p>
+  <br>
+  &lt;input type="submit"&gt;
+  <p>Boton de Envio de Datos</p>
+<br>
+&lt;/form&gt;<p>cierre de formulario</p>
+</code></strong>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="dataAtributos">Data Atributos</h2>
+<h3>Atributos perzonalizados</h3>
+<p>Los atributos de datos (o "data atributos") son atributos personalizados que se pueden añadir a elementos HTML para almacenar información adicional que no tiene un propósito visible directo en la presentación, pero que puede ser útil para scripts, estilos u otros procesos de manipulación de datos en la página web.Los atributos de datos se definen utilizando el prefijo "data-" seguido de un nombre que describe la información que se va a almacenar. Por ejemplo:</p>
+<strong><code>&lt;ul&gt;
+  <br>
+  &lt;li data-id="1" data-name="spring"&gt;Primavera&lt;/li&gt;
+  <br>
+  &lt;li data-id="2" data-name="summer"&gt;Verano&lt;/li&gt;
+  <br>
+  &lt;li data-id="3" data-name="autumn"&gt;Otoño&lt;/li&gt;
+  <br>
+  &lt;li data-id="4" data-name="winter"&gt;Invierno&lt;/li&gt;
+  <br>
+&lt;/ul&gt;
+</code></strong>
+<p>data-id: Este atributo almacena el ID numérico asociado con la estación. En este caso, el valor es "1" para la primavera.
+<br>
+data-name: Este atributo almacena el nombre de la estación. En este caso, el valor es "spring" para la primavera.
+<br>
+Primavera: Es el contenido del elemento de lista, que en este caso es el nombre de la estación.
+<br>
+Cada uno de los elementos de lista en la estructura tiene sus propios atributos data-id y data-name, que permiten almacenar información personalizada asociada a cada estación. Estos atributos personalizados son útiles cuando se necesita almacenar datos adicionales en los elementos HTML para su posterior uso en scripts, estilos u otros procesos.</p>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<hr>
+<h2 id="accesibilidadWeb">Accesibilidad Web</h2>
+<h3>Temperaturas</h3>
+<strong><code>
+&lt;ul role="list"&gt;
+<p>Esta etiqueta &lt;ul&gt; se utiliza para crear una lista desordenada. El atributo role="list" se agrega para indicar explícitamente que este elemento representa una lista. Esto es especialmente útil para los lectores de pantalla, ya que ayuda a comprender que el contenido forma una lista y no solo una serie de elementos.</p>
+<!---->
+  &lt;li tabindex="1" role="listitem"&gt;Frio&lt;/li&gt;
+  <p> Estas etiquetas &lt;li&gt; representan elementos de una lista. El atributo tabindex se utiliza para establecer el orden de tabulación de los elementos en la página. El atributo role="listitem" indica que estos elementos son elementos de una lista. Esto ayuda a los lectores de pantalla a comprender que estos elementos forman parte de una lista y les proporciona contexto.</p>
+<!---->
+  &lt;li tabindex="2" role="listitem"&gt;Calor&lt;/li&gt;
+  <br>
+  &lt;li tabindex="3" role="listitem"&gt;Tibio&lt;/li&gt;
+  <br>
+  &lt;li tabindex="4" role="listitem"&gt;Templado&lt;/li&gt;
+  <br>
+&lt;/ul&gt;
+<br>
+&lt;a role="link" aria-label="En este enlace encontraras mas informasion sobre las temperaturas" href="#" target="_blank"&gt;Mas informacion&lt;/a&gt;
+<p>Esta etiqueta &lt;a&gt; se utiliza para crear un enlace. El atributo role="link" indica que este elemento es un enlace. El atributo aria-label proporciona un texto alternativo para el enlace, que se anunciará a los usuarios de lectores de pantalla. Esto asegura que las personas que no pueden ver el contenido de la página aún puedan entender el propósito del enlace. El atributo target="_blank" hace que el enlace se abra en una nueva ventana o pestaña del navegador.
+<br>
+En resumen, estas etiquetas y atributos están diseñados para mejorar la accesibilidad de tu sitio web, proporcionando información adicional y contextos claros para los lectores de pantalla y otros dispositivos de asistencia, así como para facilitar la navegación y comprensión del contenido para todos los usuarios.
+</p>
+</code></strong>
+<br>
+<a href="Notas.html#inicio">🛦</a>
+<h2>&lt;Script&gt;</h2>
+<strong><code>&lt;script src="assets/codigos.js"&gt; &lt;/script&gt;</code></strong>
+<p>Esta etiqueta se utiliza para vincular un archivo JavaScript externo a la página web. El código contenido en ese archivo se ejecutará en el contexto de la página web, lo que permite agregar interactividad, funciones y comportamientos dinámicos a la página.</p>
+
+
+
 
 
 
@@ -208,5 +980,9 @@
 
 </body>
 </html>
-&lt; &gt;" "&lt;/ &gt;
+<a href="Notas.html#inicio">🛦</a>
+<h3></h3>
 <!---->
+<strong><code>&lt; &gt;" "&lt;/ &gt;</code></strong>
+<p></p>
+<br>
