@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas CSS</title>
+</head>
+<header>
+<h1>Estilos CSS-Notas</h1>
+
+<h2>Temario de Notas CSS</h2>
+<ul>
+<li><a href="CSS_Notas.html#reglaCSS">Regla CSS</a></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</header>
+<body>
+<main>
+<h2 id="inicio">Aprendiendo CSS</h2>
+<P><pre>Cascading Style Sheets o Hojas de estilos en cascada es un lenguage de definicion de estilos que da presentacion para documentos HTML.</pre></P>
+<h2 id="reglaCSS">Regla CSS</h2>
+<p><pre>Consta de dos partes:
+
+1.El selector, es el elemento html al que podemos aplicarle ese bloque de declaracion de estilos.
+
+2.Bloque de declaraciones que son cada uno de los atributos que vamos a modificar, su sintaxis es la siguiente (atrubuto: valor;)los cuales estan definidos dentro de llaves{}
+Por Ejemplo:
+<strong><code>
+  h1{
+    color:oranged,
+    background-color:skyblue;
+  }</code></strong>
+</pre></p>
+<br>
+<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+<hr>
+<h2>Comentarios en la Hoja de Estilos</h2>
+<p><pre>La sintaxis para comentar seria la siguiente:
+  */ Comentario Realizado /*
+</pre></p>
+<br>
+<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+<hr>
+<h2>Formas de Aplicar estilos</h2>
+
+<h3>Aplicando estilos en linea</h3>
+<p><pre>
+  <i style="font-weight:bold;color:orangered">"Cascading Style Sheets"</i>,como ejemplo esta el texto anterior, el cual posee un estilo que se le aplico en linea.
+
+  Lo implementamos de la sigueinte manera, ya que se aplica en la linea de codigo a la cual queremos dar el estilo en espesifico. 
+  <strong><code>&lt;i style="font-weight:bold;color:orangered"&gt;"Cascading Style Sheets"&lt;/i&gt;</code></strong>
+</pre></p>
+<br>
+<h3>Aplicando estilos Internamente </h3>
+<p><pre>
+  Lo cual significa que vamos a dar estilos desde el interior del codumento HTML, esto se implementa al inicio del documento y se hace de la siguiente manera:
+
+<strong><code>
+  &lt;style&gt; 
+    h1{
+      color:yellowgreen
+    }
+  &lt;style/&gt; 
+</code></strong>
+</pre></p>
+<br>
+<h3>Aplicando estilos desde una hoja de estilos</h3>
+<p><pre>
+&lt;link rel="stylesheet" href="assets/style.css" &gt;
+
+Esta es una forma diferente y más organizada de aplicar estilos a través de un archivo de hoja de estilos externo. Estás enlazando una hoja de estilos ubicada en el archivo "style.css" en la carpeta "assets". Esta hoja de estilos contiene reglas de estilo que afectarán a múltiples elementos en tus páginas web. Esta forma es preferible cuando deseas mantener tus estilos separados del contenido HTML, lo que facilita la gestión y el mantenimiento de los estilos en todo el sitio web.
+</pre></p>
+<br>
+<h3>Importando otra hoja de estilos en un ahoja de estilos(Aunque suene redundante asi es...)</h3>
+<p><pre>
+Para realizar este procedimiento hacemos lo siguiente:
+
+<strong><code>@import url("OtrosStyles.css");</code></strong>
+Nota:Debemos tener en cuenta que utilizar el @import no hace parte de una buena practica.Esto se debe a que son bloqueantes en el momento en el que el navegador lee la instruccion.
+
+</pre></p>
+<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+<hr>
+<h2></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<footer></footer>
+</body>
+</html>
+
+&lt; &gt;  &lt; /&gt; 
