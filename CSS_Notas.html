@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notas CSS</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <header>
 <h1>Estilos CSS-Notas</h1>
 
-<h2>Temario de Notas CSS</h2>
+<h2 id="inicio">Temario de Notas CSS</h2>
 <ul>
 <li><a href="CSS_Notas.html#reglaCSS">Regla CSS</a></li>
-<li></li>
-<li></li>
+<li><a href="CSS_Notas.html#comentariosHojaEstilos">Comentarios</a></li>
+<li><a href="CSS_Notas.html#selectoresBasicos">Selectores Basicos</a></li>
 <li></li>
 <li></li>
 <li></li>
@@ -29,16 +30,16 @@
 </header>
 <body>
 <main>
-<h2 id="inicio">Aprendiendo CSS</h2>
-<P><pre>Cascading Style Sheets o Hojas de estilos en cascada es un lenguage de definicion de estilos que da presentacion para documentos HTML.</pre></P>
+<h2>Aprendiendo CSS</h2>
+<P>Cascading Style Sheets o Hojas de estilos en cascada es un lenguage de definicion de estilos que da presentacion para documentos HTML.</P>
 <h2 id="reglaCSS">Regla CSS</h2>
-<p><pre>Consta de dos partes:
-
+<p>Consta de dos partes:
+<br>
 1.El selector, es el elemento html al que podemos aplicarle ese bloque de declaracion de estilos.
-
+<br>
 2.Bloque de declaraciones que son cada uno de los atributos que vamos a modificar, su sintaxis es la siguiente (atrubuto: valor;)los cuales estan definidos dentro de llaves{}
 Por Ejemplo:
-<strong><code>
+<pre><strong><code>
   h1{
     color:oranged,
     background-color:skyblue;
@@ -47,28 +48,29 @@ Por Ejemplo:
 <br>
 <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
 <hr>
-<h2>Comentarios en la Hoja de Estilos</h2>
-<p><pre>La sintaxis para comentar seria la siguiente:
-  */ Comentario Realizado /*
-</pre></p>
+<h2 id="comentariosHojaEstilos">Comentarios en la Hoja de Estilos</h2>
+<p>La sintaxis para comentar seria la siguiente:</p>
+<br>
+<pre>*/ Comentario Realizado /*</pre>
 <br>
 <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
 <hr>
 <h2>Formas de Aplicar estilos</h2>
 
 <h3>Aplicando estilos en linea</h3>
-<p><pre>
-  <i style="font-weight:bold;color:orangered">"Cascading Style Sheets"</i>,como ejemplo esta el texto anterior, el cual posee un estilo que se le aplico en linea.
-
+<p>
+  <pre><i style="font-weight:bold;color:orangered">"Cascading Style Sheets"</i></pre>,como ejemplo esta el texto anterior, el cual posee un estilo que se le aplico en linea.
+<br>
   Lo implementamos de la sigueinte manera, ya que se aplica en la linea de codigo a la cual queremos dar el estilo en espesifico. 
-  <strong><code>&lt;i style="font-weight:bold;color:orangered"&gt;"Cascading Style Sheets"&lt;/i&gt;</code></strong>
-</pre></p>
+<pre><strong><code>&lt;i style="font-weight:bold;color:orangered"&gt;"Cascading Style Sheets"&lt;/i&gt;</code></strong></pre>
+</p>
 <br>
 <h3>Aplicando estilos Internamente </h3>
-<p><pre>
+<p>
   Lo cual significa que vamos a dar estilos desde el interior del codumento HTML, esto se implementa al inicio del documento y se hace de la siguiente manera:
-
+<br>
 <strong><code>
+<pre>
   &lt;style&gt; 
     h1{
       color:yellowgreen
@@ -80,23 +82,63 @@ Por Ejemplo:
 <h3>Aplicando estilos desde una hoja de estilos</h3>
 <p><pre>
 &lt;link rel="stylesheet" href="assets/style.css" &gt;
-
+</pre>
+<br>
 Esta es una forma diferente y más organizada de aplicar estilos a través de un archivo de hoja de estilos externo. Estás enlazando una hoja de estilos ubicada en el archivo "style.css" en la carpeta "assets". Esta hoja de estilos contiene reglas de estilo que afectarán a múltiples elementos en tus páginas web. Esta forma es preferible cuando deseas mantener tus estilos separados del contenido HTML, lo que facilita la gestión y el mantenimiento de los estilos en todo el sitio web.
-</pre></p>
+</p>
 <br>
 <h3>Importando otra hoja de estilos en un ahoja de estilos(Aunque suene redundante asi es...)</h3>
-<p><pre>
+<p>
 Para realizar este procedimiento hacemos lo siguiente:
-
-<strong><code>@import url("OtrosStyles.css");</code></strong>
+<br>
+<pre><strong><code>@import url("OtrosStyles.css");</code></strong></pre>
 Nota:Debemos tener en cuenta que utilizar el @import no hace parte de una buena practica.Esto se debe a que son bloqueantes en el momento en el que el navegador lee la instruccion.
-
-</pre></p>
+<br>
+</p>
 <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
 <hr>
-<h2></h2>
-
-
+<h2 id="selectoresBasicos">Selectores Basicos</h2>
+<h3>Existen 3 selectores basicos los cules son:</h3>
+<p>
+  1.Etiquetas
+  <br>
+  2.Identificadores
+  <br>
+  3.Clases
+</p>
+<br>
+<h3>Selector de Etiquetas</h3>
+<p>El selector de etiquetas es el más simple y directo. Se utiliza para aplicar estilos a un tipo específico de elemento HTML. Por ejemplo, si deseas aplicar un estilo a todos los párrafos de tu página, puedes usar el selector de etiquetas para seleccionar el elemento &lt;p&gt;. Aquí hay un ejemplo:</p>
+<strong><code><pre>
+  p {
+  color: blue;
+  font-size: 16px;
+}
+</pre></code></strong>
+<h3>Selector de Identificadores</h3>
+<p>Los identificadores (IDs) son atributos únicos que se pueden asignar a un elemento HTML. Los IDs se utilizan para identificar un elemento específico en el documento. Los selectores de identificadores se denotan con un signo de almohadilla (#) seguido del nombre del ID. Por ejemplo, si tienes un elemento con el ID "mi-elemento", puedes aplicar estilos a él de la siguiente manera:</p>
+<strong><code><pre>
+  #mi-elemento {
+  background-color: yellow;
+  border: 1px solid black;
+}
+</pre></code></strong>
+<strong><code>Resultado:</code></strong>
+<p id="mi-elemento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, error voluptate similique quos saepe ullam excepturi exercitationem adipisci ducimus accusamus rem libero id nulla harum amet laboriosam autem iusto?</p>
+<br>
+<h3>Selector de Clases</h3>
+<p>Las clases son atributos que se pueden aplicar a múltiples elementos HTML. A diferencia de los IDs, las clases pueden ser compartidas por varios elementos. Los selectores de clases se denotan con un punto (.) seguido del nombre de la clase. Por ejemplo, si tienes varios elementos con la clase "destacado", puedes aplicar estilos a todos ellos de esta manera:</p>
+<strong><code><pre>
+  .destacado {
+  color: red;
+  font-weight: bold;
+}
+</pre></code></strong>
+<strong><code>Resultado:</code></strong>
+<p class="destacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, error voluptate similique quos saepe ullam excepturi exercitationem adipisci ducimus accusamus rem libero id nulla harum amet laboriosam autem iusto?</p>
+<br>
+<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+<hr>
 
 
 
@@ -111,5 +153,9 @@ Nota:Debemos tener en cuenta que utilizar el @import no hace parte de una buena 
 <footer></footer>
 </body>
 </html>
-
+<p></p>
+<strong><code><pre></pre></code></strong>
+<br>
+<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+<hr>
 &lt; &gt;  &lt; /&gt; 

@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+}
+
+h1,
+h3 {
+  color: #000b80;
+}
+
+h2{
+  color: #0015ff ;
+}
+
+body {
+  padding: 0 200px;
+}
+
+pre {
+  border: solid 1px;
+  display: block; /* Cambiamos a bloque para que ocupen toda la anchura disponible */
+  padding: 5px;
+  white-space: pre-wrap; /* Ajusta el texto manteniendo los espacios y saltos de línea */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho y alto */
+  background-color: rgb(27, 29, 54);
+  color: rgb(255, 255, 255);
+}
+
+/*Selectores Basicos:
+Etiqueta:este afectara a todo el contenido que este dentro de todas las etiquetas, como ejemplo toas las etiquetas <p>.
+p{
+  color: #000b80;
+}
+*/
+
+/*Identificadores dar estilos con ID se considera un antipatron o mala practica*/
+#mi-elemento{
+  background-color: yellow;
+  border: 1px solid black;
+}
+/*Clases dar estilos de esta manera nos permite reutlizar nuestro codigo CSS-es recomendado dar nombres a las clases haciendo referencia a los estilos que se van a aplicar.*/
+.destacado{
+  color: red;
+  font-weight: bold;
+}
+
