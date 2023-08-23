@@ -23,7 +23,7 @@ pre {
   padding: 5px;
   white-space: pre-wrap; /* Ajusta el texto manteniendo los espacios y saltos de línea */
   box-sizing: border-box; /* Incluye padding y borde en el ancho y alto */
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(0, 14, 56);
   color: rgb(255, 255, 255);
 }
 

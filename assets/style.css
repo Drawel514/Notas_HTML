@@ -5,8 +5,9 @@ html {
 }
 
 h1,
-h3 {
-  color: #000b80;
+h3,
+h4{
+  color: #d93300;
 }
 
 h2{
@@ -26,7 +27,7 @@ pre {
   background-color: rgb(27, 29, 54);
   color: rgb(255, 255, 255);
 }
-
+/*//////////////////////////////////////////////////////////////*/
 /*Selectores Basicos:
 Etiqueta:este afectara a todo el contenido que este dentro de todas las etiquetas, como ejemplo toas las etiquetas <p>.
 p{
@@ -44,4 +45,165 @@ p{
   color: red;
   font-weight: bold;
 }
+/*/////////////////////////////////////////////////////////////*/
+/*Selectores avanzados*/
+/*Hijos directos*/
+.hijos-directos > li {
+  background-color: crimson;
+}
 
+/*Hijos Descendientes*/
+.hijos-descendientes b{
+  background-color: darkturquoise;
+}
+
+/*Selectores de Hermanos*/
+/*los selectores de hermanos solo van a afectar a los elementos que son hermanos y que esten por debajo del elemento de referencia*/
+
+/*Selector de hermanos generales*/
+.hermanos-generales ~ li{
+  background-color: gray;
+}
+
+/*En este caso solo afectara al elemento que esta debajo del elemento de referencia*/
+/*Selector de hermanos Adyacentes*/
+.hermanos-adyacentes + li{
+  background-color: goldenrod;
+}
+
+/*Selectores de atributos*/
+
+.selectores-atributos a[href]{
+  color: cornflowerblue;
+}
+
+.selectores-atributos a[target="_blank"]{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*El comodin * aplica el estilo si contiene la palabra en cuestion*/
+.selectores-atributos a[href*="jonmircha"]{
+  font-size: 24px;
+}
+
+/*El comodin ^ aplica el estilo si contiene la palabra en cuestion al inicio*/
+.selectores-atributos a[href^="http:"]{
+  text-decoration: none;
+}
+
+/*El comodin $ aplica el estilo si contiene la palabra en cuestion alfinal*/
+.selectores-atributos a[href$=".com"]{
+  background-color: black;
+}
+
+/*El comodin ~ aplica el estilo si contiene la palabra en cuestion en una lista separada por espacios*/
+.selectores-atributos a[class~="cursos"]{
+  background-color: darkslategrey;
+}
+
+/*El comodin | aplica el estilo si contiene la palabra en cuestion en una lista separada por espacios y que despues del texto en cuestion tenga un guion medio - */
+.selectores-atributos a[class|="menu"]{
+  font-style: italic;
+}
+
+/*Selector Universal*/
+*{
+  /*font-family: 'Times New Roman', Times, serif;*/
+}
+
+.selector-universal *{
+  font-size: 30px;
+}
+
+/*/////////////////////////////////////////*/
+/*Pseudoclases: dan estilos dependiendo del contexto, posicion o estado de elemento*/
+
+.form-pseudoclases *:required{
+  border-color: #ffff01;
+}
+
+.form-pseudoclases *:valid{
+  border-color: chartreuse;
+}
+
+.form-pseudoclases *:invalid{
+  border-color: #d93300;
+}
+
+.form-pseudoclases *:focus{
+  background-color: darkgray;
+}
+
+.menu-pseudoclases a:link{
+  color: dodgerblue;
+}
+
+.menu-pseudoclases a:active{
+  color: #3700ff;
+}
+
+.menu-pseudoclases a:visited{
+  color: cadetblue;
+}
+
+.menu-pseudoclases a:hover {
+  color: aqua;
+}
+
+.parrafo-pseudoclases:hover{
+  font-size: 30px;
+}
+
+#inicio:target{
+  background-color: darkcyan;
+}
+/*////////////////////////////////*/
+/*Otras Pseudoclases*/
+
+.lista-pseudoclases li:first-child{
+  color: green;
+}
+
+.lista-pseudoclases li:last-child{
+  color: rgb(1, 163, 185);
+}
+
+.lista-pseudoclases li:nth-child(3){
+  color: rgb(189, 236, 0);
+}
+
+
+.lista-pseudoclases li:nth-child(4n){
+  font-size:20px;
+}
+
+
+.lista-pseudoclases li:nth-child(3n+1){
+  font-weight: bold;
+}
+
+
+.lista-pseudoclases li:nth-child(even){
+  background-color: darkgreen;
+}
+
+
+.lista-pseudoclases li:nth-child(odd){
+  background-color: rgb(33, 59, 33);
+}
+
+.arti-pseudoclases p:first-of-type{
+  background-color: blueviolet;
+}
+
+.arti-pseudoclases p:last-of-type{
+  background-color: rgb(56, 22, 88);
+}
+
+.arti-pseudoclases p:nth-of-type(3){
+  background-color: rgb(25, 3, 46);
+}
+
+.arti-pseudoclases *:not(p){
+  background-color: rgb(215, 174, 254);
+}

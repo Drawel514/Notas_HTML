@@ -7,138 +7,649 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <header>
-<h1>Estilos CSS-Notas</h1>
+  <article>
+  <h1 id="inicio">Estilos CSS-Notas</h1>
 
-<h2 id="inicio">Temario de Notas CSS</h2>
-<ul>
-<li><a href="CSS_Notas.html#reglaCSS">Regla CSS</a></li>
-<li><a href="CSS_Notas.html#comentariosHojaEstilos">Comentarios</a></li>
-<li><a href="CSS_Notas.html#selectoresBasicos">Selectores Basicos</a></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+  <h2>Temario de Notas CSS</h2>
+    <ul>
+      <li><a href="CSS_Notas.html#reglaCSS">Regla CSS</a></li>
+      <li><a href="CSS_Notas.html#comentariosHojaEstilos">Comentarios</a></li>
+      <li><a href="CSS_Notas.html#aplicandoEstilos">Formas de Aplicar estilos</a></li>
+      <li><a href="CSS_Notas.html#selectoresBasicos">Selectores Basicos</a></li>
+      <li><a href="CSS_Notas.html#selectoresAvanzados">Selectores Avanzados</a></li>
+      <li><a href="CSS_Notas.html#selectoresHermanos">Selectores Hermanos</a></li>
+      <li><a href="CSS_Notas.html#selectoresAtributo">Selectores de Atributo</a></li>
+      <li><a href="CSS_Notas.html#selectorUniversal">Selector Universal</a></li>
+      <li><a href="CSS_Notas.html#pseudoclases">Selectores con Pseudoclases</a></li>
+      <li><a href="CSS_Notas.html#otrasPseudoclases">Otras Pseudclases</a></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </article>
 </header>
 <body>
 <main>
-<h2>Aprendiendo CSS</h2>
-<P>Cascading Style Sheets o Hojas de estilos en cascada es un lenguage de definicion de estilos que da presentacion para documentos HTML.</P>
-<h2 id="reglaCSS">Regla CSS</h2>
-<p>Consta de dos partes:
-<br>
-1.El selector, es el elemento html al que podemos aplicarle ese bloque de declaracion de estilos.
-<br>
-2.Bloque de declaraciones que son cada uno de los atributos que vamos a modificar, su sintaxis es la siguiente (atrubuto: valor;)los cuales estan definidos dentro de llaves{}
-Por Ejemplo:
-<pre><strong><code>
-  h1{
-    color:oranged,
-    background-color:skyblue;
-  }</code></strong>
-</pre></p>
-<br>
-<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
-<hr>
-<h2 id="comentariosHojaEstilos">Comentarios en la Hoja de Estilos</h2>
-<p>La sintaxis para comentar seria la siguiente:</p>
-<br>
-<pre>*/ Comentario Realizado /*</pre>
-<br>
-<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
-<hr>
-<h2>Formas de Aplicar estilos</h2>
-
-<h3>Aplicando estilos en linea</h3>
-<p>
-  <pre><i style="font-weight:bold;color:orangered">"Cascading Style Sheets"</i></pre>,como ejemplo esta el texto anterior, el cual posee un estilo que se le aplico en linea.
-<br>
-  Lo implementamos de la sigueinte manera, ya que se aplica en la linea de codigo a la cual queremos dar el estilo en espesifico. 
-<pre><strong><code>&lt;i style="font-weight:bold;color:orangered"&gt;"Cascading Style Sheets"&lt;/i&gt;</code></strong></pre>
-</p>
-<br>
-<h3>Aplicando estilos Internamente </h3>
-<p>
-  Lo cual significa que vamos a dar estilos desde el interior del codumento HTML, esto se implementa al inicio del documento y se hace de la siguiente manera:
-<br>
-<strong><code>
-<pre>
-  &lt;style&gt; 
+<!--Divisionn entre articulos-->
+<article>
+  <h2>Aprendiendo CSS</h2>
+  <P>Cascading Style Sheets o Hojas de estilos en cascada es un lenguage de definicion de estilos que da presentacion para documentos HTML.</P>
+  <h2 id="reglaCSS">Regla CSS</h2>
+  <p>Consta de dos partes:
+  <br>
+  1.El selector, es el elemento html al que podemos aplicarle ese bloque de declaracion de estilos.
+  <br>
+  2.Bloque de declaraciones que son cada uno de los atributos que vamos a modificar, su sintaxis es la siguiente (atrubuto: valor;)los cuales estan definidos dentro de llaves{}
+  Por Ejemplo:
+  <pre><strong><code>
     h1{
-      color:yellowgreen
-    }
-  &lt;style/&gt; 
-</code></strong>
-</pre></p>
-<br>
-<h3>Aplicando estilos desde una hoja de estilos</h3>
-<p><pre>
-&lt;link rel="stylesheet" href="assets/style.css" &gt;
-</pre>
-<br>
-Esta es una forma diferente y más organizada de aplicar estilos a través de un archivo de hoja de estilos externo. Estás enlazando una hoja de estilos ubicada en el archivo "style.css" en la carpeta "assets". Esta hoja de estilos contiene reglas de estilo que afectarán a múltiples elementos en tus páginas web. Esta forma es preferible cuando deseas mantener tus estilos separados del contenido HTML, lo que facilita la gestión y el mantenimiento de los estilos en todo el sitio web.
-</p>
-<br>
-<h3>Importando otra hoja de estilos en un ahoja de estilos(Aunque suene redundante asi es...)</h3>
-<p>
-Para realizar este procedimiento hacemos lo siguiente:
-<br>
-<pre><strong><code>@import url("OtrosStyles.css");</code></strong></pre>
-Nota:Debemos tener en cuenta que utilizar el @import no hace parte de una buena practica.Esto se debe a que son bloqueantes en el momento en el que el navegador lee la instruccion.
-<br>
-</p>
-<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+      color:oranged,
+      background-color:skyblue;
+    }</code></strong>
+  </pre></p>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
 <hr>
-<h2 id="selectoresBasicos">Selectores Basicos</h2>
-<h3>Existen 3 selectores basicos los cules son:</h3>
-<p>
+<!---->
+<article>
+  <h2 id="comentariosHojaEstilos">Comentarios en la Hoja de Estilos</h2>
+  <p>La sintaxis para comentar seria la siguiente:</p>
+  <br>
+  <pre>*/ Comentario Realizado /*</pre>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<!--Divisionn entre articulos-->
+<article id="aplicandoEstilos">
+  <h2>Formas de Aplicar estilos</h2>
+
+  <h3>Aplicando estilos en linea</h3>
+  <p>
+    <pre><i style="font-weight:bold;color:orangered">"Cascading Style Sheets"</i></pre>,como ejemplo esta el texto anterior, el cual posee un estilo que se le aplico en linea.
+  <br>
+  Lo implementamos de la sigueinte manera, ya que se aplica en la linea de codigo a la cual queremos dar el estilo en espesifico. 
+  <pre><strong><code>&lt;i style="font-weight:bold;color:orangered"&gt;"Cascading Style Sheets"&lt;/i&gt;</code></strong></pre>
+  </p>
+  <br>
+  <h3>Aplicando estilos Internamente </h3>
+  <p>
+  Lo cual significa que vamos a dar estilos desde el interior del codumento HTML, esto se implementa al inicio del documento y se hace de la siguiente manera:
+  <br>
+  <strong><code>
+  <pre>
+    &lt;style&gt; 
+      h1{
+        color:yellowgreen
+      }
+    &lt;style/&gt; 
+  </code></strong>
+  </pre></p>
+  <br>
+  <h3>Aplicando estilos desde una hoja de estilos</h3>
+  <strong><code><pre>
+  &lt;link rel="stylesheet" href="assets/style.css" &gt;
+  </pre></code></strong>
+  <p>
+  Esta es una forma diferente y más organizada de aplicar estilos a través de un archivo de hoja de estilos externo. Estás enlazando una hoja de estilos ubicada en el archivo "style.css" en la carpeta "assets". Esta hoja de estilos contiene reglas de estilo que afectarán a múltiples elementos en tus páginas web. Esta forma es preferible cuando deseas mantener tus estilos separados del contenido HTML, lo que facilita la gestión y el mantenimiento de los estilos en todo el sitio web.
+  </p>
+  <br>
+  <h3>Importando otra hoja de estilos en un ahoja de estilos(Aunque suene redundante asi es...)</h3>
+  <p>
+  Para realizar este procedimiento hacemos lo siguiente:
+  <br>
+  <pre><strong><code>@import url("OtrosStyles.css");</code></strong></pre>
+  Nota:Debemos tener en cuenta que utilizar el @import no hace parte de una buena practica.Esto se debe a que son bloqueantes en el momento en el que el navegador lee la instruccion.
+  <br>
+  </p>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<!--Divisionn entre articulos-->
+<article id="selectoresBasicos">
+  <h2>Selectores Basicos</h2>
+  <h3>Existen 3 selectores basicos los cules son:</h3>
+  <p>
   1.Etiquetas
   <br>
   2.Identificadores
   <br>
   3.Clases
-</p>
-<br>
-<h3>Selector de Etiquetas</h3>
-<p>El selector de etiquetas es el más simple y directo. Se utiliza para aplicar estilos a un tipo específico de elemento HTML. Por ejemplo, si deseas aplicar un estilo a todos los párrafos de tu página, puedes usar el selector de etiquetas para seleccionar el elemento &lt;p&gt;. Aquí hay un ejemplo:</p>
-<strong><code><pre>
-  p {
-  color: blue;
-  font-size: 16px;
-}
+  </p>
+  <br>
+  <h3>Selector de Etiquetas</h3>
+  <p>El selector de etiquetas es el más simple y directo. Se utiliza para aplicar estilos a un tipo específico de elemento HTML. Por ejemplo, si deseas aplicar un estilo a todos los párrafos de tu página, puedes usar el selector de etiquetas para seleccionar el elemento &lt;p&gt;. Aquí hay un ejemplo:</p>
+  <strong><code><pre>
+    p {
+      color: blue;
+      font-size: 16px;
+    }
+  </pre></code></strong>
+  <h3>Selector de Identificadores</h3>
+  <p>Los identificadores (IDs) son atributos únicos que se pueden asignar a un elemento HTML. Los IDs se utilizan para identificar un elemento específico en el documento. Los selectores de identificadores se denotan con un signo de almohadilla (#) seguido del nombre del ID. Por ejemplo, si tienes un elemento con el ID "mi-elemento", puedes aplicar estilos a él de la siguiente manera:</p>
+  <strong><code><pre>
+    #mi-elemento {
+      background-color: yellow;
+      border: 1px solid black;
+    }
 </pre></code></strong>
-<h3>Selector de Identificadores</h3>
-<p>Los identificadores (IDs) son atributos únicos que se pueden asignar a un elemento HTML. Los IDs se utilizan para identificar un elemento específico en el documento. Los selectores de identificadores se denotan con un signo de almohadilla (#) seguido del nombre del ID. Por ejemplo, si tienes un elemento con el ID "mi-elemento", puedes aplicar estilos a él de la siguiente manera:</p>
-<strong><code><pre>
-  #mi-elemento {
-  background-color: yellow;
-  border: 1px solid black;
-}
-</pre></code></strong>
-<strong><code>Resultado:</code></strong>
-<p id="mi-elemento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, error voluptate similique quos saepe ullam excepturi exercitationem adipisci ducimus accusamus rem libero id nulla harum amet laboriosam autem iusto?</p>
-<br>
-<h3>Selector de Clases</h3>
-<p>Las clases son atributos que se pueden aplicar a múltiples elementos HTML. A diferencia de los IDs, las clases pueden ser compartidas por varios elementos. Los selectores de clases se denotan con un punto (.) seguido del nombre de la clase. Por ejemplo, si tienes varios elementos con la clase "destacado", puedes aplicar estilos a todos ellos de esta manera:</p>
-<strong><code><pre>
-  .destacado {
-  color: red;
-  font-weight: bold;
-}
-</pre></code></strong>
-<strong><code>Resultado:</code></strong>
-<p class="destacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, error voluptate similique quos saepe ullam excepturi exercitationem adipisci ducimus accusamus rem libero id nulla harum amet laboriosam autem iusto?</p>
-<br>
-<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+  <strong><code>Resultado:</code></strong>
+  <p id="mi-elemento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, error voluptate similique quos saepe ullam excepturi exercitationem adipisci ducimus accusamus rem libero id nulla harum amet laboriosam autem iusto?</p>
+  <br>  
+  <h3>Selector de Clases</h3>
+  <p>Las clases son atributos que se pueden aplicar a múltiples elementos HTML. A diferencia de los IDs, las clases pueden ser compartidas por varios elementos. Los selectores de clases se denotan con un punto (.) seguido del nombre de la clase. Por ejemplo, si tienes varios elementos con la clase "destacado", puedes aplicar estilos a todos ellos de esta manera:</p>
+  <strong><code><pre>
+    .destacado {
+      color: red;
+    font-weight: bold;
+    }
+  </pre></code></strong>
+  <strong><code>Resultado:</code></strong>
+  <p class="destacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi delectus, error voluptate similique quos saepe ullam excepturi exercitationem adipisci ducimus accusamus rem libero id nulla harum amet laboriosam autem iusto? </p>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
 <hr>
+<!--Divisionn entre articulos-->
+<article id="selectoresAvanzados">
+  <h2 >Selectores Avanzados</h2>
+  <h3><b>Selectores de Hijos Directos y Descendientes</b></h3>
+  <h3>Selector de hijo directos</h3>
+  <p>Un selector de hijo directo (&gt;) en CSS se utiliza para seleccionar elementos que son hijos directos de un elemento específico. Esto significa que solo los elementos que son directamente anidados dentro del elemento padre serán seleccionados. Los elementos más profundos en la jerarquía no serán afectados.</p>
+  <ul class="hijos-directos">
+    <li><b>YHWH</b></li>
+    <li><b>Elohim</b></li>
+    <li><b>Adonai</b></li>
+    <li><b>El Shadai</b></li>
+  </ul>
+  <p>En este conjunto de reglas, se está utilizando el selector de hijo directo (&gt;) para seleccionar todos los elementos &lt;li&gt; que son hijos directos de elementos con la clase .hijos-directos. Luego, se les aplica un fondo de color rojo oscuro (crimson).</p>
+  <strong><code><pre>
+  <i>Estilo:</i>
+    .hijos-directos &gt; li {
+      background-color: crimson;
+    }
+
+  <i>Ejemplo anterior:</i>
+    &lt;ul class="hijos-directos"&gt;
+      &lt;li&gt;&lt;b&gt;YHWH&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Elohim&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Adonai&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;El Shadai&lt;/b&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  </pre></code></strong>
+  <!--//////////////////////////////////-->
+  <h3>Selector de hijos descendientes</h3>
+  <p>Un selector de hijo descendiente (espacio en blanco) en CSS selecciona todos los elementos que son descendientes de otro elemento, sin importar si son hijos directos o anidados a mayores niveles. Los elementos pueden estar anidados a cualquier profundidad dentro del elemento padre.</p>
+  <ul class="hijos-descendientes">
+    <li><b>YHWH</b></li>
+    <li><b>Elohim</b></li>
+    <li><b>Adonai</b></li>
+    <li><b>El Shadai</b></li>
+  </ul>
+  <p>En este conjunto de reglas, se está utilizando el selector de hijos descendientes (espacio en blanco) para seleccionar todos los elementos <b> que son descendientes (ya sea hijos directos o anidados) de elementos con la clase .hijos-descendientes. Luego, se les aplica un fondo de color turquesa oscuro (darkturquoise).</p>
+  <strong><code><pre>
+    <i>Estilo:</i>
+    .hijos-descendientes b{
+      background-color: darkturquoise;
+    }
+
+    <i>Ejemplo anterior:</i>
+    &lt;ul class="hijos-descendientes"&gt;
+      &lt;li&gt;&lt;b&gt;YHWH&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Elohim&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Adonai&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;El Shadai&lt;/b&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  </pre></code></strong>
+<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<article id="selectoresHermanos">
+  <h2>Selector de Hermanos</h2>
+  <h3>Selector de hermanos General y Adyacente</h3>
+  <h3>Seletor de hermanos General</h3>
+  <p> En CSS, el selector de hermanos general (~) se utiliza para seleccionar elementos que comparten el mismo nivel dentro de su padre y que siguen al elemento de referencia. En tu código, el elemento de referencia es un elemento con la clase hermanos-generales. El estilo se aplicará a todos los elementos &lt;b&gt; que son hermanos del elemento con la clase hermanos-generales (incluido él mismo).</p>
+  <ul >
+    <li><b>Pintura</b></li>
+    <li class="hermanos-generales"><b>Escultura</b></li>
+    <li><b>Dibujo</b></li>
+    <li><b>Puntillismo</b></li>
+  </ul>
+  <i>Ejemplo:</i>
+  <strong><code><pre>
+    <i>Estilo:</i>
+    .hermanos-generales ~ li{
+      background-color: gray;
+    }
+
+    <i>Ejemplo anterior:</i>
+    &lt;ul&gt;
+      &lt;li&gt;&lt;b&gt;Pintura&lt;/b&gt;&lt;/li&gt;
+      &lt;li class="hijos-descendientes"&gt;&lt;b&gt;Escultura&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Dibujo&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Puntillismo&lt;/b&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  </pre></code></strong>
+  <!--//////////////////////////////////-->
+  <h3>Selector de hermanos Adyacente</h3>
+  <p>el selector de hermanos adyacente (+) se utiliza para seleccionar el primer elemento que es inmediatamente precedido por otro elemento. En tu código, el elemento precedente es un elemento con la clase hermanos-adyacentes. El estilo se aplicará solo al primer elemento &lt;b&gt; que sigue inmediatamente al elemento con la clase hermanos-adyacentes.</p>
+  <ul >
+    <li><b>Pintura</b></li>
+    <li class="hermanos-adyacentes"><b>Escultura</b></li>
+    <li><b>Dibujo</b></li>
+    <li><b>Puntillismo</b></li>
+  </ul>
+  <i>Ejemplo:</i>
+  <strong><code><pre>
+    <i>Estilo:</i>
+    .hermanos-adyacentes + li{
+      background-color: goldenrod;
+    }
+
+    <i>Ejemplo anterior:</i>
+    &lt;ul&gt;
+      &lt;li&gt;&lt;b&gt;Pintura&lt;/b&gt;&lt;/li&gt;
+      &lt;li class="hijos-adyacentes"&gt;&lt;b&gt;Escultura&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Dibujo&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Puntillismo&lt;/b&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  </pre></code></strong>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<!--//////////////////////////////////-->
+<article id="selectoresAtributo">
+  <h2>Selectores de Atributo</h2>
+    <p>Los selectores de atributos son una parte importante de las hojas de estilo en cascada (CSS) que permiten seleccionar elementos HTML en función de los valores de sus atributos. Estos selectores te permiten aplicar estilos a elementos que cumplen ciertos criterios relacionados con sus atributos, como clases, identificadores, valores de atributos, etc. Los selectores de atributos son útiles cuando deseas aplicar estilos a elementos específicos sin depender únicamente de su posición en la estructura del documento HTML.</p>
+  <nav class="selectores-atributos">
+    <ul>
+      <li><a href="https://jonmircha.com" target="_blank">inicio</a></li>
+      <li><a class="menu-item cursos button" href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+      <li><a href="http://jonmircha.com/blog" target="_blank">blog</a></li>
+      <li><a href="http://jonmircha.com/cv" target="_blank">cv</a></li>
+      <li><a href="https://jonmircha.com/ahora" target="_blank">ahora</a></li>
+      <li><a href="https://jonmircha.com/notas" target="_blank">Notas</a></li>
+      <li><a href="Notas.html#inicio">Ir a Notas HTML</a></li>
+    </ul>
+  </nav>
+  <br>
+    <i>Ejemplo Anterior:</i>
+  <strong><code><pre>
+    &lt;h2&gt;Selectores de Atributo&lt;/h2&gt;
+    &lt;nav class="selectores-atributos"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="https://jonmircha.com" target="_blank"&gt;inicio&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a class="menu-item cursos button" href="https://jonmircha.com/cursos" target="_blank"&gt;Cursos&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://jonmircha.com/blog" target="_blank"&gt;blog&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://jonmircha.com/cv" target="_blank"&gt;cv&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="https://jonmircha.com/ahora" target="_blank"&gt;ahora&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="https://jonmircha.com/notas" target="_blank"&gt;Notas&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="Notas.html#inicio"&gt;Ir a Notas HTML&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+  </pre></code></strong>
+  <h3>Estilo 1:</h3>
+    <p>.selectores-atributos a[href]: Este estilo se aplica a todos los elementos de anclaje (&lt;a&gt;) que tengan un atributo href. En este caso, el estilo cambia el color del texto a "cornflowerblue" (un tono de azul).</p>
+  <strong><code><pre>
+    .selectores-atributos a[href]{
+      color: cornflowerblue;
+    }
+  </pre></code></strong>
+  <h3>Estilo 2:</h3>
+    <p>.selectores-atributos a[target="_blank"]: Este estilo se aplica a los elementos de anclaje (<a>) que tengan un atributo target con el valor "_blank" (lo que significa que se abrirán en una nueva pestaña o ventana del navegador). El estilo cambia la familia de fuentes del texto a 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif.</p>
+  <strong><code><pre>
+    .selectores-atributos a[target="_blank"]{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </pre></code></strong>
+  <h3>Estilo 3:</h3>
+    <p>.selectores-atributos a[href*="jonmircha"]: Este estilo se aplica a los elementos de anclaje (<a>) cuyo atributo href contiene la subcadena "jonmircha". El estilo cambia el tamaño de fuente del texto a 24 píxeles.</p>
+  <strong><code><pre>
+    .selectores-atributos a[href*="jonmircha"]{
+      font-size: 24px;
+    }
+  </pre></code></strong>
+  <h3>Estilo 4:</h3>
+    <p>.selectores-atributos a[href^="http:"]: Este estilo se aplica a los elementos de anclaje (<a>) cuyo atributo href comienza con la cadena "http:". El estilo elimina la decoración de texto subrayado (la línea debajo del enlace).</p>
+  <strong><code><pre>
+    .selectores-atributos a[href^="http:"]{
+      text-decoration: none;
+    }
+  </pre></code></strong>
+  <h3>Estilo 5:</h3>
+    <p>.selectores-atributos a[href$=".com"]: Este estilo se aplica a los elementos de anclaje (<a>) cuyo atributo href termina con la cadena ".com". El estilo cambia el color de fondo del texto a negro.</p>
+  <strong><code><pre>
+    .selectores-atributos a[href$=".com"]{
+      background-color: black;
+    }
+  </pre></code></strong>
+  <h3>Estilo 6:</h3>
+    <p>.selectores-atributos a[class~="cursos"]: Este estilo se aplica a los elementos de anclaje (<a>) que tienen la clase "cursos" como una de las clases en su atributo class. El estilo cambia el color de fondo del texto a "darkslategrey" (un tono oscuro de gris).</p>
+  <strong><code><pre>
+    .selectores-atributos a[class~="cursos"]{
+      background-color: darkslategrey;
+    }
+  </pre></code></strong>
+  <h3>Estilo 7:</h3>
+    <p>.selectores-atributos a[class|="menu"]: Este estilo se aplica a los elementos de anclaje (<a>) que tienen la clase que comienza con "menu" en su atributo class, seguido de un guión o siendo la única clase. El estilo cambia el estilo de fuente del texto a cursiva (italic).</p>
+  <strong><code><pre>
+    .selectores-atributos a[class|="menu"]{
+      font-style: italic;
+    }
+  </pre></code></strong>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<!--//////////////////////////////////-->
+<article id="selectorUniversal">
+  <h2>Selector Universal(*)</h2>
+  <p>Un selector universal en CSS es un selector especial que coincide con todos los elementos en un documento HTML. Se representa mediante el asterisco (*). Cuando se utiliza un selector universal, se aplicará a cada elemento dentro del ámbito en el que se encuentra. No tiene en cuenta el tipo de elemento, la etiqueta, la clase, el identificador u otros atributos específicos del elemento; simplemente selecciona todos los elementos.</p>
+  <ul class="selector-universal">
+    <li><b>Genesis</b></li>
+    <li><b>Exodo</b></li>
+    <li><b>Levitico</b></li>
+    <li><b>Numeros</b></li>
+    <li><b>Deuteronomio</b></li>
+  </ul>
+  <br>
+  <strong><code><pre>
+    &lt;ul class="selector-universal"&gt;
+      &lt;li&gt;&lt;b&gt;Genesis&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Exodo&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Levitico&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Numeros&lt;/b&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;b&gt;Deuteronomio&lt;/b&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  </pre></code></strong>
+  <h3>Ejemplo 1:</h3>
+  <p>* { font-family: 'Times New Roman', Times, serif; }: Este estilo se aplica a todos los elementos del documento HTML. La propiedad font-family establece la fuente del texto para estos elementos. Estás definiendo que la fuente sea 'Times New Roman', y si no está disponible, se use Times, y si ambas fuentes no están disponibles, se utilizará una fuente genérica de la familia serif. Esto significa que todos los elementos, incluidos los encabezados, párrafos, listas, etc., tendrán esta fuente.</p>
+  <strong><code><pre>
+    *{
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo 2:</h3>
+  <p>.selector-universal * { font-size: 30px; }: Este estilo se aplica a todos los elementos dentro de cualquier elemento con la clase "selector-universal". Aquí, estás ajustando el tamaño de fuente de estos elementos internos a 30px. En este caso, los elementos internos son los elementos &lt;li&gt; dentro de la lista desordenada &lt;ul&gt;.</p>
+  <strong><code><pre>
+      .selector-universal *{
+        font-size: 30px;
+      }
+  </pre></code></strong>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<!--//////////////////////////////////-->
+<article id="pseudoclases">
+  <h2>Pseudoclases</h2>
+  <p>Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.</p>
+  <form class="form-pseudoclases">
+    <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+    <br>
+    <input type="email" name="correo" placeholder="Escribe tu correo" required>
+    <br>
+    <input type="submit">
+  </form>
+  <strong><code><pre>
+    <i>Codigo del Formulario anterior: </i>
+
+    &lt;form class="form-pseudoclases"&gt;
+
+      &lt;input type="text" name="nombre" placeholder="Escribe tu nombre" required&gt;
+      
+      &lt;input type="email" name="correo" placeholder="Escribe tu correo" required&gt;
+      
+      &lt;input type="submit"&gt;
+    &lt;/form&gt;
+  </pre></code></strong>
+  <h3>Ejemplo 1:</h3>
+  <p>.form-pseudoclases *:required:Este estilo se aplica a cualquier elemento dentro del formulario con la clase form-pseudoclases que tenga el atributo required. Cuando un campo obligatorio (con el atributo required) no se ha completado, el borde de ese campo se coloreará en amarillo (#ffff01), indicando que debe ser llenado.</p>
+  <strong><code><pre>
+    .form-pseudoclases *:required{
+      border-color: #ffff01;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo 2:</h3>
+  <p>.form-pseudoclases *:valid:Este estilo se aplica a cualquier elemento dentro del formulario con la clase form-pseudoclases que esté en un estado válido. Cuando el valor de un campo es válido (por ejemplo, un campo de correo electrónico con un formato correcto), el borde de ese campo se coloreará en verde chartreuse.</p>
+  <strong><code><pre>
+    .form-pseudoclases *:valid{
+      border-color: chartreuse;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo 3:</h3>
+  <p>.form-pseudoclases *:invalid:Este estilo se aplica a cualquier elemento dentro del formulario con la clase form-pseudoclases que esté en un estado inválido. Cuando el valor de un campo es inválido (por ejemplo, un campo de correo electrónico con un formato incorrecto), el borde de ese campo se coloreará en rojo oscuro (#d93300).</p>
+  <strong><code><pre>
+    .form-pseudoclases *:invalid{
+      border-color: #d93300;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo 4:</h3>
+  <p>.form-pseudoclases *:focus:Este estilo se aplica a cualquier elemento dentro del formulario con la clase form-pseudoclases que esté en estado de enfoque (cuando se hace clic en él o se selecciona usando el teclado). Cuando un campo está en foco, el fondo de ese campo se coloreará en gris oscuro (darkgray).</p>
+  <strong><code><pre>
+    .form-pseudoclases *:focus{
+      background-color: darkgray;
+    }
+  </pre></code></strong>
+  <h3>Pseudoclases aplicadas en un (nav)</h3>
+  <nav class="menu-pseudoclases">
+    <a href="#seccion1">Seccion-1</a>
+    <a href="#seccion2">Seccion-2</a>
+    <a href="#seccion3">Seccion-3</a>
+    <a href="#seccion4">Seccion-4</a>
+  </nav>
+  <strong><code><pre>
+    Codigo del Menu anterior:
+
+    &lt;nav class="menu-pseudoclases"&gt;
+      &lt;a href="#seccion1"&gt;Seccion-1&lt;/a&gt;
+      &lt;a href="#seccion2"&gt;Seccion-2&lt;/a&gt;
+      &lt;a href="#seccion3"&gt;Seccion-3&lt;/a&gt;
+      &lt;a href="#seccion4"&gt;Seccion-4&lt;/a&gt;
+    &lt;/nav&gt;
+  </pre></code></strong>
+  <h3>Ejemplo 5:</h3>
+  <p>.menu-pseudoclases a:link:Este estilo se aplica a todos los enlaces (&lt;a&gt;) dentro del menú con la clase menu-pseudoclases cuando están en su estado de "no visitado" (link). Los enlaces se colorearán en azul claro (dodgerblue).</p>
+  <strong><code><pre>
+    .menu-pseudoclases a:link{
+      color: dodgerblue;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo 6:</h3>
+  <p>.menu-pseudoclases a:active:Este estilo se aplica a todos los enlaces dentro del menú con la clase menu-pseudoclases cuando están en su estado de "activo" (active), es decir, cuando se hace clic en ellos. Los enlaces se colorearán en azul (#3700ff).</p>
+  <strong><code><pre>
+    .menu-pseudoclases a:active{
+      color: #3700ff;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo 7:</h3>
+  <p>.menu-pseudoclases a:visited:Este estilo se aplica a todos los enlaces dentro del menú con la clase menu-pseudoclases cuando han sido visitados previamente. Los enlaces visitados se colorearán en un tono de azul verdoso (cadetblue).</p>
+  <strong><code><pre>
+    .menu-pseudoclases a:visited{
+      color: cadetblue;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 8</h3>
+  <p>.menu-pseudoclases a:hover:Este estilo se aplica a todos los enlaces dentro del menú con la clase menu-pseudoclases cuando el cursor del mouse se encuentra sobre ellos (hover). Los enlaces se colorearán en un tono de azul verdoso más claro (aqua).</p>
+  <strong><code><pre>
+    .menu-pseudoclases a:hover {
+      color: aqua;
+    }
+  </pre></code></strong>
+  <h3>Pseudoclases aplicadas a un parrafo</h3>
+  <p class="parrafo-pseudoclases">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique impedit suscipit eos sed ullam nisi dolores adipisci molestias, a assumenda vero corrupti nemo unde, illo error? Nobis ab culpa natus?
+  </p>
+  <p>
+    Este estilo se aplica al párrafo cuando el cursor del mouse se encuentra sobre él, es decir, cuando el párrafo está en su estado :hover. Cuando el usuario coloca el cursor sobre el párrafo, el tamaño de fuente del párrafo aumentará a 30 píxeles.
+  </p>
+  <strong><code><pre>
+    .parrafo-pseudoclases:hover{
+      font-size: 30px;
+    }
+  </pre></code></strong>
+  <h3>Pseudoclase aplicada mediante ID</h3>
+  <p>
+    Este estilo se aplica al elemento con el ID inicio cuando se convierte en el fragmento de destino (target) de la URL. La pseudo-clase :target se utiliza para seleccionar un elemento que se encuentra enlazado desde otra parte de la página mediante un enlace de anclaje, es decir, cuando el usuario hace clic en un enlace que apunta a ese elemento específico.
+
+    El estilo establecido en este caso cambia el color de fondo del elemento con el ID inicio a un tono de cian oscuro (darkcyan) cuando ese elemento se convierte en el fragmento de destino de la URL.</p>
+    <strong><code><pre>
+      #inicio:target{
+      background-color: darkcyan;
+    }
+    </pre></code></strong>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<article id="otrasPseudoclases">
+  <h2>Otras Pseudoclases</h2>
+  <h3>Otras pseudoclases aplicadas en una lista</h3>
+  <ol class="lista-pseudoclases">
+    <li>Halo Combat evolet</li>
+    <li>Halo 2</li>
+    <li>Halo 3</li>
+    <li>Halo ODST</li>
+    <li>Halo REACH</li>
+    <li>Halo 4</li>
+    <li>Halo 5 Guardians</li>
+    <li>Halo WARS</li>
+    <li>Halo WARS2</li>
+    <li>Halo INFINITY</li>
+    <li>Halo Spartan Assault</li>
+    <li>Halo Spartan Strike</li>
+  </ol>
+  <strong><code><pre>
+    Codigo de la lista anterior:
+
+    &lt;ol class="lista-pseudoclases"&gt;
+      &lt;li&gt;Halo Combat evolet&lt;/li&gt;
+      &lt;li&gt;Halo 2&lt;/li&gt;
+      &lt;li&gt;Halo 3&lt;/li&gt;
+      &lt;li&gt;Halo ODST&lt;/li&gt;
+      &lt;li&gt;Halo REACH&lt;/li&gt;
+      &lt;li&gt;Halo 4&lt;/li&gt;
+      &lt;li&gt;Halo 5 Guardians&lt;/li&gt;
+      &lt;li&gt;Halo WARS&lt;/li&gt;
+      &lt;li&gt;Halo WARS2&lt;/li&gt;
+      &lt;li&gt;Halo INFINITY&lt;/li&gt;
+      &lt;li&gt;Halo Spartan Assault&lt;/li&gt;
+      &lt;li&gt;Halo Spartan Strike&lt;/li&gt;
+    &lt;/ol&gt;
+  </pre></code></strong>
+  <h3>Ejemplo: 1</h3>
+  <p>.lista-pseudoclases li:first-child:Este estilo se aplica al primer elemento &lt;li&gt; dentro de la lista con la clase lista-pseudoclases. El color del texto del primer elemento se cambiará a verde.</p>
+  <strong><code><pre>
+    .lista-pseudoclases li:first-child{
+      color: green;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 2</h3>
+  <p>.lista-pseudoclases li:last-child:Este estilo se aplica al último elemento &lt;li&gt; dentro de la lista con la clase lista-pseudoclases. El color del texto del último elemento se cambiará a un tono de azul turquesa (rgb(1, 163, 185)).</p>
+  <strong><code><pre>
+    .lista-pseudoclases li:last-child{
+      color: rgb(1, 163, 185);
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 3</h3>
+  <p>.lista-pseudoclases li:nth-child(3):Este estilo se aplica al tercer elemento &lt;li&gt; dentro de la lista con la clase lista-pseudoclases. El color del texto del tercer elemento se cambiará a un tono de verde amarillo (rgb(189, 236, 0)).</p>
+  <strong><code><pre>
+    .lista-pseudoclases li:nth-child(3){
+      color: rgb(189, 236, 0);
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 4</h3>
+  <p>.lista-pseudoclases li:nth-child(4n):Este estilo se aplica a cada cuatro elementos &lt;li&gt; dentro de la lista con la clase lista-pseudoclases. El tamaño de fuente de estos elementos se ajustará a 20 píxeles.</p>
+  <strong><code><pre>
+    .lista-pseudoclases li:nth-child(4n){
+      font-size:20px;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 5</h3>
+  <p>.lista-pseudoclases li:nth-child(3n+1):Este estilo se aplica a cada tercer elemento &lt;li&gt; más uno dentro de la lista con la clase lista-pseudoclases. El peso de la fuente de estos elementos se cambiará a negrita.</p>
+  <strong><code><pre>
+    .lista-pseudoclases li:nth-child(3n+1){
+      font-weight: bold;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 6</h3>
+  <p>.lista-pseudoclases li:nth-child(even):Este estilo se aplica a todos los elementos &lt;li&gt; con índices pares dentro de la lista con la clase lista-pseudoclases. El fondo de estos elementos se coloreará en verde oscuro (darkgreen).</p>
+  <strong><code><pre>
+  .lista-pseudoclases li:nth-child(even){
+    background-color: darkgreen;
+  }
+  </pre></code></strong>
+  <h3>Ejemplo: 7</h3>
+  <p>.lista-pseudoclases li:nth-child(odd):Este estilo se aplica a todos los elementos &lt;li&gt; con índices impares dentro de la lista con la clase lista-pseudoclases. El fondo de estos elementos se coloreará en un tono de verde oscuro (rgb(33, 59, 33)).</p>
+  <strong><code><pre>
+    .lista-pseudoclases li:nth-child(odd){
+      background-color: rgb(33, 59, 33);
+    }
+  </pre></code></strong>
+  <h3>Otras pseudoclases aplicadas a un (article)</h3>
+  <article class="arti-pseudoclases">
+    <header>Esto es un header</header>
+    <p>esto es un parrafo</p>
+    <div>Esto en un div</div>
+    <p>esto es un parrafo</p>
+    <section>Esto es una seccion</section>
+    <p>esto es un parrafo</p>
+    <div>Esto en un div</div>
+    <p>esto es un parrafo</p>
+    <footer>Esto es un footer</footer>
+  </article>
+  <strong><code><pre>
+    Codigo del articulo anterior: 
+
+    &lt;article class="arti-pseudoclases"&gt;
+      &lt;header&gt;Esto es un header&lt;/header&gt;
+      &lt;p&gt;esto es un párrafo&lt;/p&gt;
+      &lt;div&gt;Esto en un div&lt;/div&gt;
+      &lt;p&gt;esto es un párrafo&lt;/p&gt;
+      &lt;section&gt;Esto es una sección&lt;/section&gt;
+      &lt;p&gt;esto es un párrafo&lt;/p&gt;
+      &lt;div&gt;Esto en un div&lt;/div&gt;
+      &lt;p&gt;esto es un párrafo&lt;/p&gt;
+    &lt;footer&gt;Esto es un footer&lt;/footer&gt;
+    &lt;/article&gt;
+  </pre></code></strong>
+  <h3>Ejemplo: 1</h3>
+  <p>.arti-pseudoclases p:first-of-type:Este estilo se aplica al primer elemento &lt;p&gt; dentro del artículo con la clase arti-pseudoclases. El fondo de este primer párrafo se coloreará en azul violeta (blueviolet).</p>
+  <strong><code><pre>
+    .arti-pseudoclases p:first-of-type{
+      background-color: blueviolet;
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 2</h3>
+  <p>.arti-pseudoclases p:last-of-type:Este estilo se aplica al último elemento &lt;p&gt; dentro del artículo con la clase arti-pseudoclases. El fondo de este último párrafo se coloreará en un tono de morado oscuro (rgb(56, 22, 88)).</p>
+  <strong><code><pre>
+    .arti-pseudoclases p:last-of-type{
+      background-color: rgb(56, 22, 88);
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 3</h3>
+  <p>.arti-pseudoclases p:nth-of-type(3):Este estilo se aplica al tercer elemento &lt;p&gt; dentro del artículo con la clase arti-pseudoclases. El fondo de este tercer párrafo se coloreará en un tono de púrpura oscuro (rgb(25, 3, 46)).</p>
+  <strong><code><pre>
+    .arti-pseudoclases p:nth-of-type(3){
+      background-color: rgb(25, 3, 46);
+    }
+  </pre></code></strong>
+  <h3>Ejemplo: 4</h3>
+  <p>.arti-pseudoclases *:not(p):Este estilo se aplica a todos los elementos dentro del artículo con la clase arti-pseudoclases excepto los párrafos. El fondo de estos elementos se coloreará en un tono de lila claro (rgb(215, 174, 254)).</p>
+  <strong><code><pre>
+    .arti-pseudoclases *:not(p){
+      background-color: rgb(215, 174, 254);
+    }
+  </pre></code></strong>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a> 
+</article>
+<hr>
+
 
 
 
