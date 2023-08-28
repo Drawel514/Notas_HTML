@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Courier New', monospace;
-  font-size: 1.2rem;
+  
 }
 
 h1,
@@ -107,9 +107,9 @@ p{
 }
 
 /*Selector Universal*/
-*{
+/**{
   /*font-family: 'Times New Roman', Times, serif;*/
-}
+/*}*/
 
 .selector-universal *{
   font-size: 30px;
@@ -206,4 +206,99 @@ p{
 
 .arti-pseudoclases *:not(p){
   background-color: rgb(215, 174, 254);
+}
+
+/*///////////////////////////////////////////////*/
+/*PSEUDOELEMENTOS*/
+/**/
+.creacion::before{
+  content:"❤️";
+}
+
+.creacion::after{
+  content:"🧎‍♂️";
+}
+
+.Pecado::before{
+  content: "❤️‍🔥";
+}
+
+.Pecado::after{
+  content: "💔";
+}
+
+.p-pseudoelementos::first-letter{
+  font-weight: bold;
+  font-size: 32px;
+}
+.p-pseudoelementos::first-line{
+  color: aqua;
+}
+
+.p-pseudoelementos::selection{
+  color: #0015ff;
+  background-color: rgb(0, 0, 0);
+}
+
+.input-pseudoelementos::placeholder{
+  color: cadetblue;
+}
+/*////////////////////////////////////*/
+/*Agrupacion de Selectores*/
+.form-agruparSelectores input[type="text"],
+.form-agruparSelectores input[type="email"],
+.form-agruparSelectores textarea{
+  border-color: #0015ff;
+  border-width: 3px;
+  border-style: dotted;
+  background-color: black;
+  font-size: 20px;
+  display:block
+}
+
+/*////////////////////////////////////*/
+/**/
+blockquote{
+  background-color:aquamarine ;
+}
+
+#cita-YHWH{
+  background-color: blueviolet;
+}
+
+blockquote.cita-YHWH{
+  background-color:rgb(123, 0, 0) ;
+}
+
+.cita-YHWH{
+  background-color: rgb(11, 73, 73);
+}
+
+blockquote#cita-YHWH{
+  background-color: darkgoldenrod;
+}
+
+blockquote#cita-YHWH.cita-YHWH{
+  background-color: lightskyblue;
+}
+
+/*Utilizar el !important es una mala practica*/
+.cita-YHWH{
+  background-color: firebrick !important;
+}
+/*Herencia*/
+.cita-Anonimo{
+  background-color: #d93300;
+  font-size: 25px;
+  border-style: dotted;
+  border-color: #0015ff;
+}
+
+.cita-Anonimo cite{
+  background-color: bisque;
+  background-color: inherit;
+  font-size: 20px;
+  font-size: initial;
+  border-style: inherit;
+  border-color: inherit;
 }

@@ -22,12 +22,15 @@
       <li><a href="CSS_Notas.html#selectorUniversal">Selector Universal</a></li>
       <li><a href="CSS_Notas.html#pseudoclases">Selectores con Pseudoclases</a></li>
       <li><a href="CSS_Notas.html#otrasPseudoclases">Otras Pseudclases</a></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><a href="CSS_Notas.html#pseudoelementos">Pseudoelementos</a></li>
+      <li><a href="CSS_Notas.html#agrupacionSelectores">Agrupacion de Selectores</a></li>
+      <li><a href="CSS_Notas.html#algoritmoCSS">El Algoritmo de CSS</a></li>
+      <li><a href="CSS_Notas.html#herencia">La Herencia CSS</a></li>
+      <li><a href="CSS_Notas.html#reseteoNormalizacion">Reseteo y Normalizacion</a></li>
+      <li><a href="CSS_Notas.html#prefijos">Prefijos de los Navegadores</a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
     </ul>
   </article>
 </header>
@@ -649,7 +652,339 @@
   <a href="CSS_Notas.html#inicio">Regresar 🛦</a> 
 </article>
 <hr>
+<article id="pseudoelementos">
+  <h2>Pseudo elementos</h2>
+  <p>Los pseudoelementos en CSS son selectores que te permiten agregar contenido o estilo a partes específicas de un elemento HTML, sin necesidad de agregar elementos adicionales en el código HTML. Los pseudoelementos se representan utilizando dos puntos dobles (::) seguidos del nombre del pseudoelemento. Algunos ejemplos comunes de pseudoelementos son ::before, ::after, ::first-line, y ::first-letter.</p>
+  
+  <p>
+    <i>Creador</i> <span class="creacion">Todo</span> <span class="Pecado">100.00000...</span>
+  </p>
+  <h3>Codigo Anterior</h3>
+  <strong><code><pre>
+    &lt;i&gt;Creador&lt;/i&gt; &lt;span class="creacion"&gt;Todo&lt;/span&gt; &lt;span class="Pecado"&gt;100.00000...&lt;/span&gt;
+  </pre></code></strong>
+  <br><br>
+  <h3>Ejemplo 1(.creacion::before)</h3>
+  <p>Este estilo utiliza el pseudoelemento ::before para agregar contenido antes del contenido del elemento con la clase creacion. En este caso, se agrega un corazón rojo ("❤️") antes del texto "Todo" que está dentro del elemento con la clase creacion.</p>
+  <strong><code><pre>
+    .creacion::before{
+      content:"❤️";
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Ejemplo 2(.creacion::after)</h3>
+  <p>Este estilo utiliza el pseudoelemento ::after para agregar contenido después del contenido del elemento con la clase creacion. Se agrega un emoji de persona en posición de loto ("🧎‍♂️") después del texto "Todo" que está dentro del elemento con la clase creacion.</p>
+  <strong><code><pre>
+    .creacion::after{
+      content:"🧎‍♂️";
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Ejemplo 3(.Pecado::before)</h3>
+  <p>Este estilo utiliza el pseudoelemento ::before para agregar contenido antes del contenido del elemento con la clase Pecado. Se agrega un emoji de corazón en llamas ("❤️‍🔥") antes del texto "100.00000..." que está dentro del elemento con la clase Pecado.</p>
+  <strong><code><pre>
+    .Pecado::before{
+      content: "❤️‍🔥";
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Ejemplo 4(.Pecado::after)</h3>
+  <p> Se utiliza el pseudoelemento ::after para agregar contenido después del contenido del elemento con la clase Pecado. Se agrega un emoji de corazón roto ("💔") después del texto "100.00000..." que está dentro del elemento con la clase Pecado.</p>
+  <strong><code><pre>
+    .Pecado::after{
+      content: "💔";
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Ejemplo 2:</h3>
+  <p class="p-pseudoelementos">
+    Quien busca culpar a un Dios bueno por todo lo malo, esta siendo sumiso de la misma maldad por la cual culpa.Esta ignorando que la maldad se desarrolla por si misma y que es una eleccion nuestra, la cual afecta a todos.El es nuestro Padre y siempre nos enseña un camino de bien, su camino.¿Tiene la culpa un Padre que siempre ha instruido por el bien a su hijo, de que este haga lo malo?.Es una desicion que tomamos individualmente, sin importar situaciones, la eleccion siempre va a estar ahi.¿Si aborrecemos a un Dios que nos dio libertad en todo sentido, entonces como seria el ese sentimiento si nos obligase a estar sujetos a el?
+  </p>
+  <h3>Codigo del parrafo anterior:</h3>
+  <strong><code><pre>
+    &lt;p class="p-pseudoelementos"&gt;
+      Quien busca culpar a un Dios bueno por todo lo malo, está siendo sumiso de la misma maldad por la cual culpa. Está
+      ignorando que la maldad se desarrolla por sí misma y que es una elección nuestra, la cual afecta a todos. Él es nuestro
+      Padre y siempre nos enseña un camino de bien, su camino.
+      &lt;br&gt;
+      ¿Tiene la culpa un Padre que siempre ha instruido por el bien a su hijo, de que este haga lo malo? Es una decisión 
+      que tomamos individualmente, sin importar situaciones, la elección siempre va a estar ahí.
+      &lt;br&gt;
+      ¿Si aborrecemos a un Dios que nos dio libertad en todo sentido, entonces cómo sería ese sentimiento si nos obligase
+       a estar sujetos a él?
+    &lt;/p&gt;
+  </pre></code></strong>
+  <br><br>
+  <h3>Estilo 1(.p-pseudoelementos::first-letter)</h3>
+  <p>Este estilo utiliza el pseudoelemento ::first-letter para aplicar estilos al primer carácter de texto dentro del párrafo con la clase p-pseudoelementos. En este caso, se aplica un peso de fuente en negrita y un tamaño de fuente de 32 píxeles al primer carácter del párrafo.</p>
+  <strong><code><pre>
+    .p-pseudoelementos::first-letter{
+      font-weight: bold;
+      font-size: 32px;
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Estilo 2(.p-pseudoelementos::first-line)</h3>
+  <p>Este estilo utiliza el pseudoelemento ::first-line para aplicar estilos a la primera línea del párrafo con la clase p-pseudoelementos. El color de la primera línea se cambiará a color agua (aqua).</p>
+  <strong><code><pre>
+    .p-pseudoelementos::first-line{
+      color: aqua;
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Estilo 3(.p-pseudoelementos::selection)</h3>
+  <p>Este estilo utiliza el pseudoelemento ::selection para aplicar estilos al texto seleccionado en el párrafo con la clase p-pseudoelementos. El color del texto seleccionado se cambiará a azul (#0015ff) y el fondo se coloreará en negro.</p>
+  <strong><code><pre>
+    .p-pseudoelementos::selection{
+      color: #0015ff;
+      background-color: rgb(0, 0, 0);
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Ejemplo 3:</h3>
+  <input class="input-pseudoelementos" type="text" name="nombre" placeholder="Escribe tu nombre">
+  <h3>Codigo anterior:</h3>
+  <strong><code><pre>
+    &lt;input class="input-pseudoelementos" type="text" name="nombre" placeholder="Escribe tu nombre"&gt;
+  </pre></code></strong>
+  <h3>Estilo(.input-pseudoelementos::placeholder)</h3>
+  <p>:Este estilo utiliza el pseudoelemento ::placeholder para aplicar estilos al texto de marcador de posición (placeholder) del elemento de entrada con la clase input-pseudoelementos. En este caso, el color del texto del marcador de posición del &lt;input&gt; se cambiará a un tono de azul verdoso (cadetblue).Cuando un usuario ingresa texto en el campo de entrada, el color del texto de marcador de posición se restaurará al valor predeterminado. Este estilo afecta únicamente al texto de marcador de posición y no al texto que se ingresa en el campo.</p>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<article id="agrupacionSelectores">
+  <h2>Agrupacion de Selectores</h2>
+  <p>La agrupación de selectores en CSS es una técnica que te permite aplicar el mismo conjunto de estilos a múltiples elementos en una sola declaración. En lugar de repetir el mismo conjunto de propiedades y valores para cada selector individualmente, puedes agruparlos en una única regla de estilo para simplificar y optimizar tu código CSS.</p>
+  <form class="form-agruparSelectores">
+    <input type="text" name="nombre" placeholder="Escribe tu nombre">
+    <br>
+    <input type="email" name="correo" placeholder="Escribe tu correo">
+    <br>
+    <textarea name="comentarios" placeholder="Escribe un comentario" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit">
+  </form>
+  <h3>Codigo anterior:</h3>
+  <strong><code><pre>
+    &lt;form class="form-agruparSelectores"&gt;
+      &lt;input type="text" name="nombre" placeholder="Escribe tu nombre"&gt;
+      &lt;br&gt;
+      &lt;input type="email" name="correo" placeholder="Escribe tu correo"&gt;
+      &lt;br&gt;
+      &lt;textarea name="comentarios" placeholder="Escribe un comentario" cols="30" rows="10"&gt;&lt;/textarea&gt;
+      &lt;br&gt;
+      &lt;input type="submit"&gt;
+    &lt;/form&gt;
+  </pre></code></strong>
+  <p>Los estilos .form-agruparSelectores input[type="text"], .form-agruparSelectores input[type="email"], .form-agruparSelectores textarea se aplican a los campos de entrada (&lt;input&gt;) de tipo "text", los campos de entrada de tipo "email" y las áreas de texto (&lt;textarea&gt;) dentro del formulario con la clase form-agruparSelectores.
+  </p>
+  <h3>Estilos: </h3>
+  <strong><code><pre>
+    .form-agruparSelectores input[type="text"],
+    .form-agruparSelectores input[type="email"],
+    .form-agruparSelectores textarea{
+      border-color: #0015ff;
+      border-width: 3px;
+      border-style: dotted;
+      background-color: black;
+      font-size: 20px;
+      display:block
+    }
+  </pre></code></strong>
+  <ul>
+    <li>(border-color: #0015ff;), (border-width: 3px;), (border-style: dotted;):Estos estilos combinados aplican un borde de color azul (#0015ff) con un ancho de 3 píxeles y un estilo de línea punteada a los campos de entrada y áreas de texto.</li>
+    <li>(background-color: black;):Este estilo establece un fondo negro para los campos de entrada y áreas de texto.</li>
+    <li>(font-size: 20px;):Este estilo establece un tamaño de fuente de 20 píxeles para el texto en los campos de entrada y áreas de texto.</li>
+    <li>(display: block;):Este estilo establece el valor "block" para el atributo display, lo que hace que cada campo de entrada y área de texto se muestre en una línea separada, es decir, cada uno ocupará todo el ancho disponible en su contenedor.</li>
+  </ul>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<article id="algoritmoCSS">
+  <h2>El Algoritmo de CSS</h2>
+  <p>Es la forma en que el navegador aplica los estilos al documento HTML.Es vital entender este concepto para si mismo entender la manera en que se aplican y en algunos casoso se sobreescriben las reglas CSS.</p>
+  <ul>
+    <li>La Cascada</li>
+    <li>La Especificidad</li>
+    <li>La Herencia</li>
+  </ul>
 
+  <h3>La Cascada</h3>
+  <p>Es el mecanismo en que el navegador aplica los estilos.Y toma en cuenta lo siguiente los siguientes puntos</p>
+  <ul>
+  <b>El origen del codigo:</b>
+  <br><br>
+      <li>El user agent(los estilos pordefecto del navegador)</li>
+      <li>Personalizaciones del usuario</li>
+      <li>Los estilos del autor</li>
+  </ul>
+  <p>La cascada en CSS se refiere al proceso de determinar qué reglas de estilo se aplicarán a un elemento en particular cuando existen múltiples reglas que podrían aplicarse. El término "cascada" refleja cómo las reglas se aplican de manera secuencial, siguiendo un conjunto de reglas de prioridad y precedencia.La cascada sigue un orden específico:</p>
+
+  <!--//////////////////////////////////-->
+  <h3>La Esfecificidad</h3>
+  <p>Es el peso que posee un selector cuando hay conflictos de estilos.La especificidad es un sistema de puntuación que se utiliza para determinar cuál regla de estilo debe aplicarse cuando hay conflictos entre reglas. Cada selector tiene una puntuación de especificidad basada en cuántos elementos, clases e IDs se utilizan en ese selector. <br>
+  La puntuación de especificidad generalmente se calcula de la siguiente manera:</p>
+  <ul>
+    <li>Etiquetas y Pseudoelementos------------------0,0,0,1</li>
+    <li>Clases, Atributos y Pseudoclases-------------0,0,1,0</li>
+    <li>Identificadores------------------------------0,1,0,0</li>
+    <li>Estilos en Linea-----------------------------1,0,0,0</li>
+    <li>!important---------------------Rompe laEspecificidad</li>
+  </ul>
+  <!--Practica de Cascada y especificidad-->
+  <h2>Practica:</h2>
+  <blockquote id="cita-YHWH" class="cita-YHWH" style="background-color:green">Grande es el misterio de la piedad, Dios fue manifestado en carne <cite>YHWH</cite> </blockquote>
+  <strong><code><pre>
+    Codigo anterior:
+    &lt;blockquote id="cita-YHWH" class="cita-YHWH" style="background-color:green"&gt;Grande es el 
+    misterio de la piedad, Dios fue manifestado en 
+    carne &lt;cite&gt;YHWH&lt;/cite&gt; &lt;/blockquote&gt;
+  </pre></code></strong>
+  <h3>Estilo en línea(style="background-color:green"):</h3>
+  <p>El estilo en línea tiene la mayor especificidad, por lo que el fondo verde definido en el estilo en línea se aplicará. Esto sobrescribe cualquier estilo definido en las reglas de CSS externas.</p>
+  <br><br>
+  <h3>ID Selector(#cita-YHWH)</h3>
+  <p>El selector de ID #cita-YHWH tiene una especificidad más alta que el selector de clase .cita-YHWH, pero menos que el estilo en línea. Sin embargo, debido a la regla !important más adelante, este estilo se omitirá.</p>
+  <strong><code><pre>
+    #cita-YHWH{
+      background-color: blueviolet;
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Clase Selector(.cita-YHWH)</h3>
+  <p>La clase .cita-YHWH tiene menos especificidad que el ID, pero debido a la regla !important, este estilo se aplicará, sobrescribiendo cualquier estilo definido en reglas anteriores.</p>
+  <strong><code><pre>
+    .cita-YHWH{
+      background-color: rgb(11, 73, 73);
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Selector de Elemento (blockquote)</h3>
+  <p>El selector de elemento blockquote tiene la menor especificidad de los selectores presentes. Sin embargo, debido a la regla !important, este estilo se omitirá.</p>
+  <strong><code><pre>
+    blockquote{
+      background-color:aquamarine ;
+    }
+  </pre></code></strong>
+  <br><br>
+  <h3>Otras combinaciones de Selectores</h3>
+  <p>Los siguientes estilos que utilizan combinaciones de selectores no afectarán debido a la regla (!important)</p>
+  <h4>(blockquote.cita-YHWH)</h4>
+  <strong><code><pre>
+    blockquote.cita-YHWH{
+      background-color:rgb(123, 0, 0) ;
+    }
+  </pre></code></strong>
+  <h4>(blockquote#cita-YHWH)</h4>
+  <strong><code><pre>
+    blockquote#cita-YHWH{
+      background-color: darkgoldenrod;
+    }
+  </pre></code></strong>
+  <h4>(blockquote#cita-YHWH.cita-YHWH)</h4>
+  <strong><code><pre>
+    blockquote#cita-YHWH.cita-YHWH{
+      background-color: lightskyblue;
+    }
+  </pre></code></strong>
+  <br><br>
+  <h4>Estilo con (!important)</h4>
+  <p>En resumen, debido a la regla !important que se encuentra al final, el estilo de fondo rojo (background-color: firebrick) definido en .cita-YHWH se aplicará al elemento &lt;blockquote&gt;. Esto resalta la importancia de evitar el uso innecesario de !important y comprender cómo las reglas de cascada, especificidad y herencia interactúan para aplicar los estilos en CSS.</p>
+  <strong><code><pre>
+    .cita-YHWH{
+      background-color: firebrick !important;
+    }
+  </pre></code></strong>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<article id="herencia">
+  <h2>La Herencia</h2>
+  <p>La herencia en CSS se refiere a la capacidad de los elementos secundarios para heredar ciertos estilos de sus elementos padres. No todos los estilos se heredan, solo algunos están diseñados para ser heredados, como color, font-family, font-size, line-height, etc.Se aplica con el valor(inherit) o si queremos evitarla, podemos asignar otro valor o inicializar la propiedad en cuestion con el valor (initial).</p>
+
+  <blockquote class="cita-Anonimo">El querer algo no te da derecho a tenerlo y amarlo es estar dispuesto a perder el doble, aun asi seguimos luchando. <cite>Anonimo</cite> </blockquote>
+
+  <h4>Codigo anterior:</h4>
+  <strong><code><pre>
+    &lt;blockquote class="cita-Anonimo"&gt;El querer algo no te da derecho a tenerlo y amarlo es estar dispuesto a perder el doble, aún así seguimos luchando. &lt;cite&gt;Anónimo&lt;/cite&gt; &lt;/blockquote&gt;
+  </pre></code></strong>
+
+  <h4>Estilo 1:(.cita-Anonimo)</h4>
+  <p>Estos estilos se aplicarán al elemento &lt;blockquote&gt; con la clase cita-Anonimo. Esto significa que el fondo será de un color rojo oscuro (#d93300), el tamaño de fuente será de 25 píxeles, el borde tendrá un estilo de línea punteada y un color azul (#0015ff).</p>
+  <strong><code><pre>
+    .cita-Anonimo{
+      background-color: #d93300;
+      font-size: 25px;
+      border-style: dotted;
+      border-color: #0015ff;
+    }
+  </pre></code></strong>
+  <br><br>
+  <h4>Estilo 2:(.cita-Anonimo cite)</h4>
+  <p>Estos estilos se aplicarán al elemento &lt;cite&gt; que está dentro del elemento &lt;blockquote&gt; con la clase cita-Anonimo. Los siguientes estilos se aplicarán a la cita dentro del bloque de citas:</p>
+  <strong><code><pre>
+    .cita-Anonimo cite{
+      background-color: bisque;
+      background-color: inherit;
+      font-size: 20px;
+      font-size: initial;
+      border-style: inherit;
+      border-color: inherit;
+    }
+  </pre></code></strong>
+  <h4>background-color: bisque;</h4>
+  <p>Establece un fondo de color bisque (una tonalidad de beige) para la cita.</p>
+  <h4>background-color: inherit;</h4>
+  <p>Sin embargo, este estilo se sobrescribe inmediatamente, heredando el fondo del bloque de citas (&lt;blockquote&gt;).</p>
+  <h4>font-size: 20px;</h4>
+  <p> Establece un tamaño de fuente de 20 píxeles para la cita.font-size: initial;: Este estilo se sobrescribe inmediatamente, restableciendo el tamaño de fuente al valor inicial.</p>
+  <h4>border-style: inherit;</h4>
+  <p> Hereda el estilo de borde del bloque de citas (&lt;blockquote&gt;).</p>
+  <h4>border-color: inherit;</h4>
+  <p>Hereda el color de borde del bloque de citas (&lt;blockquote&gt;).</p>
+  <br>
+  <p>En resumen, los estilos .cita-Anonimo se aplican al bloque de citas y establecen un fondo rojo oscuro, un tamaño de fuente grande, un borde punteado y un color de borde azul. Los estilos .cita-Anonimo cite se aplican al elemento &lt;cite&gt; dentro del bloque de citas, pero algunos estilos se sobrescriben con la propiedad inherit o initial, y otros se heredan del bloque de citas principal.</p>
+  <br>
+  <a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+  <hr>
+<article id="reseteoNormalizacion">
+  <h2>Resteo y Normalizacion de Estilos</h2>
+  <p>El reseteo y la normalización son dos enfoques comunes en CSS para establecer una base uniforme y consistente en el diseño y estilo de los elementos HTML en diferentes navegadores. Ambos enfoques buscan solucionar problemas de inconsistencias y diferencias de diseño entre navegadores al proporcionar reglas de estilo iniciales.</p>
+  <br>
+  <h3>Reseteo (CSS Reset)</h3>
+  <p>El reseteo es una técnica que consiste en eliminar o restablecer los estilos predeterminados que los navegadores aplican a los elementos HTML. Los navegadores tienen hojas de estilo predeterminadas que pueden variar, lo que puede conducir a diferencias en la apariencia de los elementos en diferentes navegadores. Un reseteo busca nivelar el campo de juego al eliminar estos estilos predeterminados.Un ejemplo de reseteo podría ser:</p>
+  <strong><code><pre>
+    /* CSS Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  </pre></code></strong>
+  <p>En este ejemplo, se establece que todos los elementos (*) no tendrán márgenes ni rellenos por defecto y se utiliza el modelo de caja border-box, que garantiza que el ancho y alto incluyan los márgenes y rellenos.</p>
+  <br><br>
+  <h3>Normalización (CSS Normalize)</h3>
+  <p>La normalización es una técnica similar al reseteo, pero en lugar de eliminar todos los estilos predeterminados, busca mantener algunos estilos útiles mientras que normaliza otros para que funcionen de manera coherente en todos los navegadores. El objetivo es lograr una apariencia uniforme pero conservar algunas de las ventajas de los estilos predeterminados. <br><br>
+  Un ejemplo de normalización sería utilizar una biblioteca como "Normalize.css", que está diseñada para corregir y mejorar estilos específicos en diferentes navegadores. Puedes incluir Normalize.css en tu proyecto y se encargará de establecer una base más consistente.</p>
+<br>
+<a href="CSS_Notas.html#inicio">Regresar 🛦</a>
+</article>
+<hr>
+<article id="prefijos">
+  <h2>Prefijos de los Navegadores</h2>
+  <p>os prefijos de los navegadores son un conjunto de letras o palabras que se agregan como prefijo a las propiedades CSS experimentales antes de que se estandaricen oficialmente. Estos prefijos permiten a los desarrolladores probar y utilizar características nuevas de CSS antes de que estén completamente soportadas en todos los navegadores, pero también indican que esas características aún están en proceso de desarrollo y podrían cambiar en futuras versiones. <br><br> Los prefijos de los navegadores ayudan a evitar problemas de compatibilidad y permiten a los desarrolladores utilizar características avanzadas antes de que se conviertan en parte de las especificaciones oficiales de CSS. Sin embargo, debido a que estas características pueden variar entre navegadores y versiones, se recomienda su uso con precaución y generalmente solo para casos en los que sea necesario.<br><br>Los prefijos de los navegadores generalmente se agregan en forma de un prefijo específico al comienzo de una propiedad CSS experimental. Aquí están algunos de los prefijos más comunes y sus correspondencias con navegadores:</p>
+  <ul>
+    <li>Navegadores de Microsoft (-ms-)</li>
+    <li>FireFox (-moz-)</li>
+    <li>Todos los demas navegadores(-webkit-)</li>
+    <li>Opera (-o-)</li>
+  </ul>
+
+</article>
 
 
 
